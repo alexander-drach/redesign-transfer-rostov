@@ -46,7 +46,7 @@ button:hover {
     max-width: 1280px;
     padding: 0 15px;
     margin: 0 auto;
-    outline: 1px solid green;
+    /*outline: 1px solid green;*/
 }
 
 h1,
@@ -334,6 +334,7 @@ textarea {
     background-repeat: no-repeat;
     background-size: cover;
     background-image: url(./img/bg-hero.jpg);
+    margin-bottom: 20px;
 }
 
 .main-title {

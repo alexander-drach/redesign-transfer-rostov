@@ -8,6 +8,7 @@
       <div class="container">
         <h2 class="title-section">Тарифы</h2>
       </div>
+      <div class="tabs"></div>
     </div><!-- rates -->
 
     <section class="servises">
