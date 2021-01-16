@@ -40,7 +40,7 @@
           <li><a href="#">Направления</a></li>
           <li><a href="#">Бронирование</a></li>
           <li><a href="#">О нас</a></li>
-          <li><a href="#">Контаакты</a></li>
+          <li><a href="#">Контакты</a></li>
         </ul>
         <button class="hamb" type="button">
           <span class="visually-hidden">открыть меню</span>
