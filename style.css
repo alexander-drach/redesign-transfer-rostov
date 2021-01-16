@@ -322,3 +322,224 @@ textarea {
     line-height: 42px;
 }
 /* footer end*/
+
+/* hero */
+.hero {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    min-height: 620px;
+    text-align: center;
+    padding-bottom: 50px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url(./img/bg-hero.jpg);
+}
+
+.main-title {
+    margin-bottom: 0;
+}
+/* hero end */
+
+/* block phones */
+.phones-block {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 32px;
+    color: #19017a;
+    font-weight: bold;
+    margin-bottom: 90px;
+}
+
+.phones-block .phones__icon {
+    display: block;
+    width: 50px;
+    height: 50px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url(./img/icons/contacts/icon-phone.svg);
+    margin: 0 10px;
+}
+/* block phones end */
+
+/* FRONT-PAGE */
+/* services */
+.servises {
+    margin-bottom: 90px;
+}
+.wrapper-list-services {
+    display: flex;
+}
+
+.wrapper-list-services .wrapper__item {
+    width: 50%;
+}
+
+.wrapper-list-services .list__item {
+    position: relative;
+    margin-bottom: 20px;
+    padding-left: 35px;
+    font-size: 26px;
+ }
+
+.wrapper-list-services .list__item:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 7px;
+    display: block;
+    width: 20px;
+    height: 20px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url(./img/icons/icon-list-marker.svg);
+}
+/* services end */
+
+/* booking */
+.booking {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url(./img/bg-booking-front.jpg);
+    padding: 40px 15px;
+    margin-bottom: 90px;
+}
+.booking p {
+    font-family: Montserrat Alternates;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 32px;
+    line-height: 42px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.01em;
+    color: #ffffff;
+}
+
+.booking a {
+    color: #ffffff;
+    margin: 0 15px;
+    text-decoration: underline;
+}
+
+.order-btn {
+    padding: 15px 40px 15px 25px;
+    border: 2px solid var(--green);
+    color: var(--green);
+    background-color: #ffffff;
+    background-repeat: no-repeat;
+    background-size: 20px;
+    background-image: url(./img/icons/icon-btn-booking.svg);
+    background-position: right 12px center;
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 20px;
+}
+/* booking end*/
+
+/* features */
+.features {
+    margin-bottom: 90px;
+}
+
+.list_features {
+    display: flex;
+}
+
+.features .list__item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: calc(100% / 4 - 20px);
+    margin-left: 10px;
+    margin-right: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.features__icon {
+    margin-bottom: 20px;
+}
+
+.features__title {
+    margin-bottom: 20px;
+}
+
+.list__desc {
+    font-size: 18px;
+    line-height: 1.5;
+}
+/* features end*/
+
+/* routs */
+.list_routs {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.list_routs .list__item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    width: calc(100% / 3 - 30px);
+    min-height: 300px;
+    margin-left: 15px;
+    margin-right: 15px;
+    margin-bottom: 40px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.routs__img {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: auto;
+    height: 100%;
+}
+
+.routs__overlay {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(0deg, rgba(70, 70, 70, 0.5), rgba(70, 70, 70, 0.5));
+}
+
+.routs__title {
+    position: relative;
+    font-size: 28px;
+    color: #ffb015;
+    z-index: 1;
+}
+
+.routs__link {
+    position: relative;
+    min-width: 200px;
+    padding: 15px 50px;
+    background-color: #ffffff;
+    color: var(--green);
+    border: 2px solid var(--green);
+    border-radius: 20px;
+    z-index: 1;
+}
+/* routs end */
+/* FRONT-PAGE END*/
+
+/* BOOKING-PAGE */
+.form-booking {
+    font-size: 20px;
+}
+/* BOOKING-PAGE END */
