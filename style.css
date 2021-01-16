@@ -145,11 +145,11 @@ textarea {
     align-items: center;
 }
 
-.messengers_header {
+.messengers {
     display: flex;
 }
 
-.messengers_header .messengers__item {
+.messengers .messengers__item {
     width: 30px;
     height: 30px;
     margin-right: 27px;
@@ -364,6 +364,16 @@ textarea {
 /* block phones end */
 
 /* FRONT-PAGE */
+/* rates */
+.rates {
+    margin-bottom: 90px;
+}
+
+.rates  .title-section{
+    text-align: left;
+}
+/* rates end*/
+
 /* services */
 .servises {
     margin-bottom: 90px;
@@ -625,3 +635,94 @@ select {
     font-size: 20px;
 }
 /* BOOKING-PAGE END */
+
+/* ABOUT-PAGE */
+/* about */
+.about {
+    margin-bottom: 90px;
+}
+
+.container_about {
+    display: flex;
+}
+
+.about-item_services {
+    flex: 1;
+    margin-right: 170px;
+}
+
+.about-item_methods {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 500px;
+}
+
+.about-item_methods .about-text {
+    margin-bottom: 5px;
+}
+
+.about-item_methods .about-text a{
+    text-decoration: underline;
+}
+
+.about-item_methods .messengers {
+    margin-top: 15px;
+    margin-bottom: 30px;
+}
+
+.about-item .item-title {
+    font-size: 32px;
+    line-height: 42px;
+    text-align: center;
+    letter-spacing: 0.01em;
+    color: #27323A;
+    font-weight: bold;
+}
+
+.about-item .about-text {
+    font-size: 22px;
+}
+
+.about-item .about-text p {
+    margin-bottom: 25px;
+    line-height: 1.5;
+}
+
+.about-phones {
+    margin-bottom: 40px;
+}
+
+.about-phones .phones__item{
+    display: block;
+    font-size: 32px;
+    color: #19017a;
+    font-weight: bold;
+}
+
+.about-social {
+    margin-top: 15px;
+    margin-bottom: 30px;
+}
+
+.about-social .social__link_vk {
+    background-image: url(./img/icons/social/icon-vk.svg);
+}
+
+.about-social .social__link_facebook {
+    background-image: url(./img/icons/social/icon-facebook.svg);
+}
+
+.about-social .social__link_instagram {
+    background-image: url(./img/icons/social/icon-instagram.svg);
+}
+
+.about-social .social__link_twitter {
+    background-image: url(./img/icons/social/icon-twitter.svg);
+}
+
+.about-social .social__link_youtube {
+    background-image: url(./img/icons/social/icon-youtube.svg);
+}
+/* about end */
+/* ABOUT-PAGE END */

@@ -4,6 +4,12 @@
 
     <?php include 'includes/block-phones.php'?>
 
+    <div class="rates">
+      <div class="container">
+        <h2 class="title-section">Тарифы</h2>
+      </div>
+    </div><!-- rates -->
+
     <section class="servises">
       <h2 class="title-section">Наши услуги</h2>
       <div class="wrapper-list-services container">
