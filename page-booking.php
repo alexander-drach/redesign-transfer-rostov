@@ -35,7 +35,7 @@ Template Name: Страница - бронирование
         <div class="field">
           <label class="label" for="info">
             <span>Дополнительная информация</span>
-            <textarea id="info" name="info">Дополнительная информация</textarea>
+            <textarea class="input" id="info" name="info" placeholder="Дополнительная информация"></textarea>
           </label>
         </div>
 

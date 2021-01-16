@@ -539,7 +539,89 @@ textarea {
 /* FRONT-PAGE END*/
 
 /* BOOKING-PAGE */
+
+.container_form {
+    max-width: 1000px;
+    margin: 0 auto 100px auto;
+}
+
+.form_title {
+    display: flex;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 32px;
+    line-height: 42px;
+    letter-spacing: 0.01em;
+    color: var(--titles);
+}
+
 .form-booking {
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 30px;
+    border-radius: 20px;
+}
+
+.field {
+    margin-bottom: 18px;
+}
+
+.input {
+    background: #f2f2f2;
+    border: 1px solid #bdbdbd;
+    box-sizing: border-box;
+    margin-top: 10px;
+    font-size: 20px;
+}
+
+textarea {
+    resize: vertical;
+    font-size: 20px;
+}
+
+.label span {
+    color: #bdbdbd;
+    font-weight: bold;
+}
+
+.field-group {
+    display: flex;
+    justify-content: space-between;
+}
+
+.field-group label, .radio-group {
+    width: calc(100% / 2 - 40px);
+}
+
+textarea {
+    margin-top: 10px;
+}
+
+.radio {
+    display: flex;
+    justify-content: space-between;
+}
+
+.radio-group{
+    display: flex;
+    flex-direction: column;
+}
+
+form .order-btn {
+    position: relative;
+    left: 50%;
+    transform: translate(-50%, 0);
+    margin-top: 90px;
+}
+
+select {
+    display: block;
+    width: 100%;
+    margin-top: 10px;
+    padding: 15px;
+    background: #f2f2f2;
+    border: 1px solid #bdbdbd;
+    border-radius: 5px;
     font-size: 20px;
 }
 /* BOOKING-PAGE END */
