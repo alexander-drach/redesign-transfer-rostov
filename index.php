@@ -7,8 +7,48 @@
     <div class="rates">
       <div class="container">
         <h2 class="title-section">Тарифы</h2>
-      </div>
-      <div class="tabs"></div>
+        <div class="tabs-wrapper">
+          <div class="tabs">
+            <header class="tabs-header">
+              <button class="tabs-header__item">Стандарт</button>
+              <button class="tabs-header__item">Комфорт</button>
+              <button class="tabs-header__item">Бизнес</button>
+            </header><!-- tabs__header -->
+            <div class="tabs-content">
+              <section class="tabs-content__item">
+                <h3 class="tabs-content__title">Стандарт</h3>
+                <div class="slider">
+                  <div class="slides-wrapper">
+                    <img src="img/slider/s-1.png" alt="">
+                    <img src="img/slider/s-2.png" alt="">
+                    <img src="img/slider/s-3.png" alt="">
+                  </div>
+                </div>
+                <ul class="list tabs-features">
+                  <li class="tabs-features__item">
+                    <div class="tabs-features__icon">
+                      <img src="img/icons/icon-condition.svg" alt="">
+                    </div>
+                    <span class="tabs-features__text">кондиционер</span>
+                  </li>
+                  <li class="tabs-features__item">
+                    <div class="tabs-features__icon">
+                      <img src="img/icons/icon-place.svg" alt="">
+                    </div>
+                    <span class="tabs-features__text">до 4 мест</span>
+                  </li>
+                </ul>
+                <div class="slider__nav">
+                  <button class="slider__dot slider__dot_active"></button>
+                  <button class="slider__dot"></button>
+                  <button class="slider__dot"></button>
+                </div>
+              </section><!-- tabs-content__item -->
+            </div><!-- tabs-content -->
+          </div><!-- tabs -->
+          <a class="order-btn" href="./page-booking.php?rate=">Забронировать</a>
+        </div><!-- tabs-wrapper -->
+      </div><!-- container -->
     </div><!-- rates -->
 
     <section class="servises">
