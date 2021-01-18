@@ -19,6 +19,11 @@
 <body>
 <header class="header-page">
   <div class="container container_header">
+      <picture>
+        <source srcset="img/logo-black-mobile.svg" media="(max-width: 480px)">
+        <source srcset="img/logo-black-tablet.svg" media="(max-width: 1024px)">
+        <img class="logo__img" src="img/logo-black.svg" alt="Логотип РостовЮг Трансфер">
+      </picture>
     <a class="logo" href="/">
       <picture>
         <source srcset="img/logo-mobile.svg" media="(max-width: 480px)">

@@ -46,7 +46,7 @@
               </section><!-- tabs-content__item -->
             </div><!-- tabs-content -->
           </div><!-- tabs -->
-          <a class="order-btn" href="./page-booking.php?rate=">Забронировать</a>
+          <a class="routs__link" href="./page-booking.php?rate=">Заказать</a>
         </div><!-- tabs-wrapper -->
       </div><!-- container -->
     </div><!-- rates -->

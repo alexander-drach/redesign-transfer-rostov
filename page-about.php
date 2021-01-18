@@ -3,7 +3,7 @@
 Template Name: Страница - о нас
 */
 ?><?php include 'header.php'?>
-  <main class="main">
+  <main class="about-main">
     <?php include 'includes/hero.php'?>
 
     <?php include 'includes/block-phones.php'?>
@@ -75,7 +75,7 @@ Template Name: Страница - о нас
             <p>
               Мы оказываем целый ряд дополнительных услуг:
             </p>
-            <ul>
+            <ul class="list">
               <li>
                 - встреча с табличкой,
               </li>

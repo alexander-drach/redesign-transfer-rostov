@@ -11,6 +11,7 @@ html {
     --titles: #19017a;
     --text: #27323a;
     --green: #016f19;
+    --orange: #ffb55f;
 }
 
 body {
@@ -100,14 +101,15 @@ textarea {
 }
 
 .visually-hidden {
-    position: absolute;
+    /* position: absolute;
     width: 1px;
     height: 1px;
     margin: -1px;
     padding: 0;
     border: 0;
     clip: rect(0 0 0 0);
-    overflow: hidden;
+    overflow: hidden; */
+    display: none;
 }
 
 .list_social {
@@ -171,7 +173,12 @@ textarea {
 
 .phones_header {
     font-size: 14px;
+    font-weight: 600;
     margin-left: 130px;
+}
+
+.phones_header a {
+    color: var(--text);
 }
 
 .phones_header .phones__item:first-child {
@@ -193,7 +200,7 @@ textarea {
     display: block;
     width: 100%;
     height: 5px;
-    background-color: #19017a;
+    background-color: var(--titles);
     border-radius: 4px;
 }
 
@@ -205,7 +212,7 @@ textarea {
     display: block;
     width: 100%;
     height: 5px;
-    background-color: #19017a;
+    background-color: var(--titles);
     border-radius: 4px;
 }
 
@@ -217,7 +224,7 @@ textarea {
     display: block;
     width: 100%;
     height: 5px;
-    background-color: #19017a;
+    background-color: var(--titles);
     border-radius: 4px;
 }
 
@@ -339,6 +346,15 @@ textarea {
 
 .main-title {
     margin-bottom: 0;
+    font-size: 40px;
+    font-weight: bold;
+    line-height: 50px;
+    letter-spacing: 0.01em;
+    text-shadow: 1px 2px 2px rgba(0, 0, 0, 0.25);
+}
+
+.main-title span {
+    font-weight: 600;
 }
 /* hero end */
 
@@ -348,9 +364,10 @@ textarea {
     align-items: center;
     justify-content: center;
     font-size: 32px;
-    color: #19017a;
+    color: var(--titles);
     font-weight: bold;
     margin-bottom: 90px;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.25);
 }
 
 .phones-block .phones__icon {
@@ -378,13 +395,17 @@ textarea {
 
 .tabs-header__item {
     display: block;
-    font-family: Montserrat Alternates;
+    font-family: "Montserrat Alternates";
     font-weight: bold;
     font-size: 30px;
     line-height: 40px;
     letter-spacing: 0.01em;
-    color: #19017A;
+    color: var(--titles);
     margin-bottom: 60px;
+}
+
+.tabs-header__item:hover {
+    color: rgba(25, 1, 122, 0.5);
 }
 
 .tabs-content {
@@ -393,16 +414,16 @@ textarea {
 }
 
 .tabs-content__title {
-    font-family: Montserrat Alternates;
+    font-family: "Montserrat Alternates";
     font-style: normal;
     font-weight: 800;
     font-size: 80px;
     line-height: 100px;
     text-align: center;
     letter-spacing: 0.08em;
-    color: #FFFFFF;
+    color: #ffffff;
     -webkit-text-stroke-width: 4px;
-    -webkit-text-stroke-color: #19017A;
+    -webkit-text-stroke-color: var(--titles);
     margin-bottom: 30px;
 }
 
@@ -419,7 +440,7 @@ textarea {
     width: 100%;
 }
 
-.slider img{
+.slider img {
     position: absolute;
     left: 50%;
     top: 50%;
@@ -452,6 +473,12 @@ textarea {
     margin-right: 15px;
 }
 
+.tabs-features__text {
+    font-size: 22px;
+    line-height: 32px;
+    color: #333333;
+}
+
 .slider__nav {
     display: flex;
     justify-content: center;
@@ -461,7 +488,7 @@ textarea {
     width: 15px;
     height: 15px;
     border-radius: 50%;
-    background: #CFEEFC;
+    background: #cfeefc;
     border: 1px solid;
     border: 1px solid rgba(2, 134, 31, 0.8);
     margin-right: 15px;
@@ -482,8 +509,12 @@ textarea {
     margin-bottom: 90px;
 }
 
-.rates  .title-section{
+.rates .title-section {
     text-align: left;
+}
+
+.rates .routs__link {
+    font-weight: bold;
 }
 /* rates end*/
 
@@ -504,7 +535,7 @@ textarea {
     margin-bottom: 20px;
     padding-left: 35px;
     font-size: 26px;
- }
+}
 
 .wrapper-list-services .list__item:before {
     content: "";
@@ -645,6 +676,7 @@ textarea {
     position: relative;
     font-size: 28px;
     color: #ffb015;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.25);
     z-index: 1;
 }
 
@@ -656,9 +688,11 @@ textarea {
     color: var(--green);
     border: 2px solid var(--green);
     border-radius: 20px;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.25);
     z-index: 1;
 }
 /* routs end */
+
 /* FRONT-PAGE END*/
 
 /* BOOKING-PAGE */
@@ -712,7 +746,8 @@ textarea {
     justify-content: space-between;
 }
 
-.field-group label, .radio-group {
+.field-group label,
+.radio-group {
     width: calc(100% / 2 - 40px);
 }
 
@@ -725,7 +760,7 @@ textarea {
     justify-content: space-between;
 }
 
-.radio-group{
+.radio-group {
     display: flex;
     flex-direction: column;
 }
@@ -750,6 +785,18 @@ select {
 /* BOOKING-PAGE END */
 
 /* ABOUT-PAGE */
+
+.about-main .about-text {
+    font-size: 22px;
+}
+
+.about-main .item-title {
+    font-size: 32px;
+    line-height: 42px;
+    text-align: center;
+    letter-spacing: 0.01em;
+    font-weight: bold;
+}
 /* about */
 .about {
     margin-bottom: 90px;
@@ -775,7 +822,7 @@ select {
     margin-bottom: 5px;
 }
 
-.about-item_methods .about-text a{
+.about-item_methods .about-text a {
     text-decoration: underline;
 }
 
@@ -784,17 +831,8 @@ select {
     margin-bottom: 30px;
 }
 
-.about-item .item-title {
-    font-size: 32px;
-    line-height: 42px;
-    text-align: center;
-    letter-spacing: 0.01em;
-    color: #27323A;
-    font-weight: bold;
-}
-
-.about-item .about-text {
-    font-size: 22px;
+.about-item {
+    color: #27323a;
 }
 
 .about-item .about-text p {
@@ -806,11 +844,16 @@ select {
     margin-bottom: 40px;
 }
 
-.about-phones .phones__item{
+.about-phones .phones__item {
     display: block;
     font-size: 32px;
-    color: #19017a;
+    color: var(--titles);
     font-weight: bold;
+}
+
+.phones-block .phones__item,
+.tabs-header__item {
+    border-bottom: 2px solid var(--orange);
 }
 
 .about-social {
@@ -838,4 +881,171 @@ select {
     background-image: url(./img/icons/social/icon-youtube.svg);
 }
 /* about end */
+
+/* transfer */
+
+.transfer {
+    color: #4f4f4f;
+}
+
+.transfer .item-title {
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.25);
+}
+
+.transfer-img {
+    width: 640px;
+    border: 1px solid red;
+}
+
+.wrapper-transfer {
+    display: flex;
+}
+
+/* transfer end */
 /* ABOUT-PAGE END */
+
+/* MEDIA REQUESTS*/
+
+@media (max-width: 1440px) {
+}
+
+@media (max-width: 992px) {
+}
+
+@media (max-width: 768px) {
+}
+
+@media (max-width: 375px) {
+    .phones_header, 
+    .main .phones-block, 
+    .messengers_header,
+    .booking .booking__slogan,
+    .booking .booking__online,
+    .footer-menu {
+        display: none;
+    }
+
+    .tabs,
+    .wrapper-list-services,
+    .list_features,
+    .list_routs,
+    .sub-title,
+    .copyright {
+        display: block;
+    }
+
+    .nav {
+        margin-left: 0;
+    }
+
+    .main-title {
+        display: flex;
+        flex-direction: column;
+        font-size: 20px;
+        line-height: 30px;
+    }
+
+    .main-title span {
+        font-size: 18px;
+        font-weight: normal;
+    }
+
+    .hero {
+        min-height: 170px;
+        padding-bottom: 0;
+    }
+
+      .title-section {
+        font-size: 24px;
+        line-height: 29px;
+    }
+
+    .rates .title-section {
+        text-align: center;
+    }
+
+
+    .tabs-header {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+    }
+
+    .tabs-header__item {
+        font-size: 16px;
+        line-height: 20px;
+    }
+
+    .tabs-content__title {
+        font-size: 36px;
+        line-height: 46px;
+        -webkit-text-stroke-width: 2px;
+    }
+
+    .rates .routs__link {
+        width: 170px;
+        display: block;
+        margin: auto;
+    }
+
+    .wrapper-list-services .list__item {
+        font-size: 17px;
+        line-height: 25px;
+    }
+
+    .wrapper-list-services .wrapper__item {
+        width: 100%;
+    }
+
+    .wrapper-list-services .list__item::before {
+        width: 15px;
+        height: 15px;
+    }
+
+    .booking a {
+        text-decoration: none;
+    }
+
+    .booking__call {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .features .list__item {
+        width: 100%;
+        margin-bottom: 30px;
+    }
+
+    .list__desc {
+        line-height: 24px;
+        letter-spacing: 0.01em;
+    }
+
+    .routs .title-section {
+        max-width: 50%;
+        margin: auto;
+        margin-bottom: 30px;
+    }
+
+    .features__icon,
+    .features__title {
+        margin-bottom: 10px;
+    }
+
+    .list_routs .list__item {
+        width: 90%;
+    }
+ 
+    .footer-page h3,
+    .email-footer,
+    .email-footer a {
+        font-size: 18px;
+        line-height: 24px;
+        font-weight: normal;
+    }
+
+    .email-footer a {
+        font-style: italic;
+     
+    }
+}
