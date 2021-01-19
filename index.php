@@ -65,7 +65,7 @@
           </ul>
         </div><!-- wrapper__item -->
         <div class="wrapper__item">
-          <h2 class="title-section sub-title visually-hidden">А также</h2>
+          <h2 class="title-section sub-title">А также</h2>
           <ul class="list list_services">
             <li class="list__item">Обслуживание корпоративных клиентов.</li>
             <li class="list__item">Обслуживание гостиниц и отелей.</li>

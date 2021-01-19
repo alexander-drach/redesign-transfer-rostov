@@ -101,14 +101,14 @@ textarea {
 }
 
 .visually-hidden {
-    /* position: absolute;
+    position: absolute;
     width: 1px;
     height: 1px;
     margin: -1px;
     padding: 0;
     border: 0;
     clip: rect(0 0 0 0);
-    overflow: hidden; */
+    overflow: hidden;
     display: none;
 }
 
@@ -341,6 +341,7 @@ textarea {
     background-repeat: no-repeat;
     background-size: cover;
     background-image: url(./img/bg-hero.jpg);
+    background-position: center;
     margin-bottom: 20px;
 }
 
@@ -507,6 +508,7 @@ textarea {
 /* rates */
 .rates {
     margin-bottom: 90px;
+    display: none;
 }
 
 .rates .title-section {
@@ -522,6 +524,11 @@ textarea {
 .servises {
     margin-bottom: 90px;
 }
+
+.servises .sub-title {
+    display: none;
+}
+
 .wrapper-list-services {
     display: flex;
 }
@@ -651,6 +658,7 @@ textarea {
     padding-top: 30px;
     padding-bottom: 30px;
     border-radius: 20px;
+    text-align: center;
     overflow: hidden;
 }
 
@@ -696,7 +704,6 @@ textarea {
 /* FRONT-PAGE END*/
 
 /* BOOKING-PAGE */
-
 .container_form {
     max-width: 1000px;
     margin: 0 auto 100px auto;
@@ -785,7 +792,6 @@ select {
 /* BOOKING-PAGE END */
 
 /* ABOUT-PAGE */
-
 .about-main .about-text {
     font-size: 22px;
 }
@@ -904,8 +910,122 @@ select {
 /* transfer end */
 /* ABOUT-PAGE END */
 
-/* MEDIA REQUESTS*/
+/* MEDIA QUERY */
 
+@media (max-width: 1440px) {
+    .header-contact-menu {
+        justify-content: space-between;
+        flex: 1;
+    }
+
+    .logo {
+        margin-right: 30px;
+    }
+
+    .phones_header {
+        margin-left: 0;
+    }
+
+    .nav {
+        margin-left: 25px;
+    }
+
+    .wrapper-list-services .list__item {
+        position: relative;
+        margin-bottom: 20px;
+        padding-left: 35px;
+        font-size: 16px;
+    }
+
+    .wrapper-list-services .list__item:before {
+        top: 0px;
+    }
+
+    .booking p {
+        font-size: 24px;
+        line-height: 36px;
+    }
+}
+
+@media (max-width: 768px) {
+    .hero {
+        min-height: 330px;
+        padding-bottom: 20px;
+    }
+
+    .main-title {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .phones-block {
+        font-size: 18px;
+    }
+
+    .phones-block .phones__icon {
+        width: 30px;
+        height: 30px;
+        margin: 0 7px;
+    }
+
+    .list_features {
+        flex-wrap: wrap;
+    }
+
+    .features .list__item {
+        width: calc(100% / 2 - 20px);
+        margin-bottom: 30px;
+    }
+
+    .list_routs .list__item {
+        width: calc(100% / 2 - 30px);
+    }
+
+    .footer-menu {
+        display: none;
+    }
+
+    .copyright {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .law {
+        width: 100%;
+        text-align: center;
+        margin-bottom: 25px;
+    }
+}
+
+@media (max-width: 640px) {
+    .wrapper-list-services {
+        flex-wrap: wrap;
+    }
+
+    .wrapper-list-services .wrapper__item {
+        width: 100%;
+    }
+
+    .servises .sub-title {
+        display: block;
+    }
+
+    .features .list__item {
+        width: 100%;
+        margin-bottom: 30px;
+    }
+
+    .list_routs .list__item {
+        width: 100%;
+    }
+}
+
+@media (max-width: 480px) {}
+
+@media (max-width: 375px) {}
+
+/*
 @media (max-width: 1440px) {
 }
 
@@ -956,6 +1076,7 @@ select {
           margin-bottom: 30px;
     }
 }
+
 @media (min-width: 481px) and (max-width: 767px) {
       .routs__link {
         width: 240px;
@@ -990,9 +1111,6 @@ select {
         display: none;
     }
 
-    
-    /* .copyright,
-    .tabs,*/
     .list_features, 
     .list_routs {
         display: block;
@@ -1141,7 +1259,8 @@ select {
         margin-right: 30px;
     }
 }
-
+*/
+/*
 @media (min-width: 320px) {
     .copyright,
     .tabs {
@@ -1176,3 +1295,4 @@ select {
         width: 100%;
     }
 }
+*/
