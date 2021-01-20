@@ -121,6 +121,10 @@ textarea {
     margin-right: 40px;
 }
 
+.list_social .list__item:last-child {
+    margin-right: 0;
+}
+
 .list_social .social__link {
     display: block;
     width: 33px;
@@ -129,6 +133,7 @@ textarea {
     background-size: contain;
     background-position: center;
 }
+
 /* common style end */
 
 /* header */
@@ -179,6 +184,13 @@ textarea {
 
 .phones_header a {
     color: var(--text);
+}
+
+.booking .phones__item {
+    font-family: "Roboto";
+    font-style: italic;
+    font-size: 36px;
+    line-height: 46px;
 }
 
 .phones_header .phones__item:first-child {
@@ -314,6 +326,12 @@ textarea {
     line-height: 14px;
 }
 
+.copyright span {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
 .law {
     text-decoration: underline;
 }
@@ -328,6 +346,7 @@ textarea {
     font-size: 32px;
     line-height: 42px;
 }
+
 /* footer end*/
 
 /* hero */
@@ -348,14 +367,14 @@ textarea {
 .main-title {
     margin-bottom: 0;
     font-size: 40px;
-    font-weight: bold;
     line-height: 50px;
+    font-weight: bold;
     letter-spacing: 0.01em;
     text-shadow: 1px 2px 2px rgba(0, 0, 0, 0.25);
 }
 
 .main-title span {
-    font-weight: 600;
+    font-weight: 500;
 }
 /* hero end */
 
@@ -508,7 +527,6 @@ textarea {
 /* rates */
 .rates {
     margin-bottom: 90px;
-    display: none;
 }
 
 .rates .title-section {
@@ -537,12 +555,12 @@ textarea {
     width: 50%;
 }
 
-.wrapper-list-services .list__item {
+/* .wrapper-list-services .list__item {
     position: relative;
     margin-bottom: 20px;
     padding-left: 35px;
     font-size: 26px;
-}
+} */
 
 .wrapper-list-services .list__item:before {
     content: "";
@@ -569,6 +587,7 @@ textarea {
     padding: 40px 15px;
     margin-bottom: 90px;
 }
+
 .booking p {
     font-family: Montserrat Alternates;
     font-style: normal;
@@ -580,6 +599,7 @@ textarea {
     text-align: center;
     letter-spacing: 0.01em;
     color: #ffffff;
+    margin-bottom: 40px;
 }
 
 .booking a {
@@ -592,6 +612,7 @@ textarea {
     padding: 15px 40px 15px 25px;
     border: 2px solid var(--green);
     color: var(--green);
+    text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.25);
     background-color: #ffffff;
     background-repeat: no-repeat;
     background-size: 20px;
@@ -935,6 +956,7 @@ select {
         margin-bottom: 20px;
         padding-left: 35px;
         font-size: 16px;
+        line-height: 26px;
     }
 
     .wrapper-list-services .list__item:before {
@@ -947,16 +969,29 @@ select {
     }
 }
 
+@media (max-width: 940px) {
+    .booking .phones__item {
+        font-size: 1.5rem;
+        line-height: 32px;
+    }
+}
+
 @media (max-width: 768px) {
     .hero {
         min-height: 330px;
         padding-bottom: 20px;
+        background-image: url(./img/bg-hero-tablet.jpg);
     }
 
     .main-title {
         display: flex;
         align-items: center;
         flex-direction: column;
+    }
+
+    .main-title span {
+        font-size: 30px;
+        line-height: 40px;
     }
 
     .phones-block {
@@ -969,8 +1004,82 @@ select {
         margin: 0 7px;
     }
 
+    .phones_header,
+    .phones-block {
+        display: none;
+    }
+
+    .booking {
+        padding-bottom: 20px;
+        background-image: url(./img/bg-booking-front-tablet.jpg);
+    }
+
+    .booking p {
+        font-size: 22px;
+        line-height: 32px;
+        font-weight: normal;
+    }
+
+    .booking__online {
+        margin-bottom: 30px;
+    }
+
+    .booking .phones__item {
+        font-size: 24px;
+        line-height: 34px;
+    }
+
+    .booking .booking__call {
+        margin-bottom: 0;
+    }
+
+    .booking .booking__slogan {
+        margin-bottom: 15px;
+    }
+
+    .title-section {
+        font-size: 28px;
+        line-height: 38px;
+    }
+
+    .rates .title-section {
+        text-align: center;
+    }
+
+    .tabs {
+        display: block;
+    }
+
+    .tabs-header {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+    }
+
+    .tabs-header__item {
+        font-size: 26px;
+        line-height: 30px;
+    }
+
+    .tabs-content__title {
+        font-size: 50px;
+        line-height: 50px;
+        text-align: right;
+        -webkit-text-stroke-width: 2px;
+        letter-spacing: 0.04em;
+    }
+
+    .tabs-features__text {
+        font-size: 14px;
+        line-height: 14px;
+    }
+
     .list_features {
         flex-wrap: wrap;
+    }
+
+    .tabs-features {
+        justify-content: flex-end;
     }
 
     .features .list__item {
@@ -982,19 +1091,87 @@ select {
         width: calc(100% / 2 - 30px);
     }
 
-    .footer-menu {
-        display: none;
+    .tabs-wrapper .routs__link {
+        display: block;
+        margin: auto;
+        width: 240px;
+        background: radial-gradient(50% 50% at 50% 50%, #02861f 28.65%, #016f19 100%), rgba(2, 134, 31, 0.8);
+        box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.25);
+        color: #ffffff;
+        text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.25);
+        font-size: 20px;
+        line-height: 30px;
+        letter-spacing: 0.01em;
+        text-align: center;
+    }
+
+    .wrapper-list-services {
+        padding: 0 45px;
+    }
+
+    .footer-page h3,
+    .email-footer,
+    .email-footer a {
+        font-size: 20px;
+        line-height: 30px;
+    }
+
+    .email-footer {
+        font-weight: bold;
+    }
+
+    .phohes_footer {
+        font-weight: bold;
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 20px;
+    }
+
+    .phones-title,
+    .email-footer,
+    .social-title {
+        margin-bottom: 20px;
+    }
+
+    .list_social .social__link {
+        width: 28px;
+        height: 20px;
+    }
+
+    .list_social .list__item,
+    .law a:first-child {
+        margin-right: 20px;
     }
 
     .copyright {
-        flex-wrap: wrap;
-        justify-content: center;
+        position: relative;
+        font-size: 10px;
+        line-height: 12px;
+        padding: 0 15px;
     }
 
+    .footer-menu {
+        font-size: 14px;
+        line-height: 14px;
+        margin-bottom: 40px;
+    }
+
+    .footer-menu li {
+        margin-right: 30px;
+    }
     .law {
-        width: 100%;
-        text-align: center;
         margin-bottom: 25px;
+    }
+}
+
+@media (max-width: 700px) {
+    .copyright span {
+        transform: none;
+    }
+
+    .booking__call {
+        display: flex;
+        flex-direction: column;
     }
 }
 
@@ -1019,88 +1196,19 @@ select {
     .list_routs .list__item {
         width: 100%;
     }
-}
-
-@media (max-width: 480px) {}
-
-@media (max-width: 375px) {}
-
-/*
-@media (max-width: 1440px) {
-}
-
-@media (max-width: 992px) {
-}
-
-@media (max-width: 767px) {
-    .hero {
-        min-height: 330px;
-        padding-bottom: 20px;
+    .booking {
+        margin-bottom: 60px;
     }
 
-    .main-title {
-        display: flex;
-        flex-direction: column;
-    }
-
-    .title-section {
-        font-size: 28px;
-        line-height: 38px;
-    }
-
-    .tabs-header__item {
-        font-size: 26px;
-        line-height: 30px;
-    }
-
-    .tabs-content__title {
-        font-size: 50px;
-        line-height: 50px;
-        text-align: right;
-    }
-
-    .tabs-features__text {
-        font-size: 14px;
-        line-height: 14px;
-    }
-
-    .sub-title {
-        display: block;
-    }
-
-    .wrapper-list-services {
-        display: block;
-    } 
-
-    .features .list__item {
-          margin-bottom: 30px;
-    }
-}
-
-@media (min-width: 481px) and (max-width: 767px) {
-      .routs__link {
-        width: 240px;
-        background: radial-gradient(50% 50% at 50% 50%, #02861f 28.65%, #016f19 100%), rgba(2, 134, 31, 0.8);
-        box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.25);
-        color: #FFFFFF;
-        text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.25);
+    .booking p {
         font-size: 20px;
-        line-height: 30px;
-        letter-spacing: 0.01em;
     }
 
-    .list_routs .list__item {
+    .routs__img {
+        display: block;
         width: 100%;
+        object-fit: cover;
     }
-
-    .features .list__item {
-        width: calc(100% / 2 - 20px);
-    }
-
-    .list_features {
-        flex-wrap: wrap;
-    }
-
 }
 
 @media (max-width: 480px) {
@@ -1111,10 +1219,10 @@ select {
         display: none;
     }
 
-    .list_features, 
+    .list_features,
     .list_routs {
         display: block;
-    } 
+    }
 
     .nav {
         margin-left: 0;
@@ -1172,11 +1280,6 @@ select {
         text-decoration: none;
     }
 
-    .booking__call {
-        display: flex;
-        flex-direction: column;
-    }
-
     .list__desc {
         line-height: 24px;
         letter-spacing: 0.01em;
@@ -1230,66 +1333,24 @@ select {
         flex-direction: column;
     }
 
-    .list_social .list__item,
-    .law a:first-child,
-    .copyright span {
-        margin-right: 20px;
-    }
-
-    .list_social .list__item:last-child {
-        margin-right: 0;
-    }
-
-    .list_social .social__link {
-        width: 28px;
-        height: 20px;
-    }
-
     .footer-social,
     .law {
         margin-bottom: 40px;
     }
-
-    .copyright {
-        font-size: 10px;
-        line-height: 12px;
-    }
-
-    .copyright span {
-        margin-right: 30px;
-    }
 }
-*/
+
+@media (max-width: 375px) {
+}
+
+/*
+
+
+@media (max-width: 480px) {
+   
 /*
 @media (min-width: 320px) {
-    .copyright,
-    .tabs {
-        display: block;
-    }
 
-    .phones_header,
-    .phones-block {
-        display: none;
-    }
-    .rates .title-section {
-        text-align: center;
-    }
-
-    .tabs-header {
-        display: flex;
-        justify-content: space-between;
-        width: 100%;
-    }
-
-    .tabs-content__title {
-        -webkit-text-stroke-width: 2px;
-        letter-spacing: 0.04em;
-    }
-
-    .rates .routs__link {
-        display: block;
-        margin: auto;
-    }
+   
 
     .wrapper-list-services .wrapper__item {
         width: 100%;
