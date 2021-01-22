@@ -36,7 +36,8 @@
   </footer>
   <button class="btn-up visually-hidden" type="button"><span class="visually-hidden">Наверх</span></button>
   </body>
-  </html>
-</footer>
+
+  </footer>
 </body>
+
 </html>
