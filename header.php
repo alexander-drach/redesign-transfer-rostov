@@ -34,13 +34,13 @@
         <?php include 'includes/phones.php'?>
       </div>
       <nav class="nav">
-        <ul class="main-menu">
-          <li><a href="#">Главная</a></li>
-          <li><a href="#">Услуги</a></li>
-          <li><a href="#">Направления</a></li>
-          <li><a href="#">Бронирование</a></li>
-          <li><a href="#">О нас</a></li>
-          <li><a href="#">Контакты</a></li>
+        <ul class="list main-menu">
+          <li><a href="index.php">Главная</a></li>
+          <li><a href="index.php#services">Услуги</a></li>
+          <li><a href="index.php#routs">Направления</a></li>
+          <li><a href="page-booking.php">Бронирование</a></li>
+          <li><a href="page-about.php">О нас</a></li>
+          <li><a href="index.php#contact">Контакты</a></li>
         </ul>
         <button class="hamb" type="button">
           <span class="visually-hidden">открыть меню</span>

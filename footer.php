@@ -2,7 +2,7 @@
 
   <footer class="footer-page">
     <div class="container">
-      <h2 class="title-section">Контакты</h2>
+      <h2 id="contact" class="title-section">Контакты</h2>
       <h3 class="phones-title">Наши телефоны</h3>
       <div class="phones phohes_footer">
         <?php include 'includes/phones.php'?>
@@ -35,6 +35,7 @@
     </div><!-- container -->
   </footer>
   <button class="btn-up visually-hidden" type="button"><span class="visually-hidden">Наверх</span></button>
+  <script src="js/script.js"></script>
   </body>
 
   </footer>

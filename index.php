@@ -51,7 +51,7 @@
       </div><!-- container -->
     </div><!-- rates -->
 
-    <section class="servises">
+    <section id="services" class="servises">
       <h2 class="title-section">Наши услуги</h2>
       <div class="wrapper-list-services container">
         <div class="wrapper__item">
@@ -132,7 +132,7 @@
       </ul>
     </section><!-- features -->
 
-    <section class="routs">
+    <section id="routs" class="routs">
       <h2 class="title-section">Популярные направления</h2>
       <div class="container">
         <ul class="list list_routs">

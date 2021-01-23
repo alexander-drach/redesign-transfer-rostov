@@ -253,6 +253,70 @@ textarea {
 .close-menu {
     display: none;
 }
+
+.header-page.open {
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(180deg, rgba(25, 1, 122, 0.9) 13.54%, rgba(72, 67, 143, 0.7) 78.65%, rgba(114, 201, 228, 0.5) 96.87%);
+    z-index: 50;
+    padding-top: 100px;
+    overflow-y: auto;
+}
+
+.header-page.open .container_header {
+    align-items: flex-start;
+}
+
+.header-page.open .logo {
+    display: none;
+}
+
+.header-page.open nav {
+    margin-left: 0;
+}
+
+.header-page.open .close-menu {
+    display: block;
+    position: absolute;
+    top: 30px;
+    right: 60px;
+    width: 35px;
+    height: 45px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-image: url(img/icons/icon-close-menu.svg);
+}
+
+.header-page.open .hamb {
+    display: none;
+}
+
+.header-page.open .messengers {
+    display: none;
+}
+
+.header-page.open .phones {
+    display: none;
+}
+
+.header-page.open .main-menu {
+    display: flex;
+    flex-direction: column;
+}
+
+.header-page.open .main-menu li {
+    margin-bottom: 30px;
+    font-size: 22px;
+    line-height: 32px;
+    text-align: center;
+}
+
+.header-page.open .main-menu li a{
+    color: #ffffff;
+}
 /* header end*/
 
 /* footer */
@@ -1382,6 +1446,10 @@ select {
         margin-top: 40px;
     }
     /* booking page end */
+
+    .header-page.open .close-menu {
+        right: 45px;
+    }
 }
 
 @media (max-width: 700px) {
@@ -1567,6 +1635,17 @@ select {
     .footer-social,
     .law {
         margin-bottom: 40px;
+    }
+
+    .header-page.open .messengers {
+        display: flex;
+        position: absolute;
+        left: 30px;
+        top: 30px;
+    }
+
+    .header-page.open .close-menu {
+        right: 30px;
     }
 }
 
