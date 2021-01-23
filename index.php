@@ -82,7 +82,7 @@
       <p class="booking__slogan">Забронируйте поездку прямо сейчас</p>
       <p class="booking__call">Позвоните нам  <?php include 'includes/phones.php'?></p>
       <p class="booking__online">или забронируйте <a href="page-booking.php">онлайн</a> на сайте</p>
-      <button class="order-btn" type="button">Забронировать</button>
+      <a href="page-booking.php" class="order-btn">Забронировать</a>
     </div><!-- booking -->
 
     <section class="features">

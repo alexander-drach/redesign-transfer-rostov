@@ -773,6 +773,12 @@ textarea {
     border-radius: 20px;
     text-align: center;
     overflow: hidden;
+    transition: transform 0.3s ease;
+}
+
+.list_routs .list__item:hover {
+    transform: scale(1.1);
+    box-shadow: 4px 4px 10px grey;
 }
 
 .routs__img {
@@ -1517,6 +1523,10 @@ select {
 }
 
 @media (max-width: 480px) {
+    h2 {
+        margin-bottom: 30px;
+    }
+
     .messengers_header,
     .booking .booking__slogan,
     .booking .booking__online,
