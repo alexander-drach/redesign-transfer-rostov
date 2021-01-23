@@ -947,15 +947,27 @@ select {
 
 .transfer {
     color: #4f4f4f;
+    margin-bottom: 50px;
 }
 
 .transfer .item-title {
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.25);
 }
 
+.transfer-text {
+    flex: 1;
+    margin-right: 50px;
+}
+
 .transfer-img {
-    width: 640px;
-    border: 1px solid red;
+    position: relative;
+    width: 600px;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.transfer-img img {
+    width: 100%;
 }
 
 .wrapper-transfer {
@@ -990,6 +1002,11 @@ select {
         line-height: 36px;
     }
 
+    .phones-block {
+        font-size: 18px;
+        margin-bottom: 40px;
+    }
+
     /* booking page */
     .container_form {
         padding-left: 15px;
@@ -1005,9 +1022,42 @@ select {
     }
     /* booking page end */
 
+    /* about page */
+    .about-item_services {
+        flex: 1;
+        margin-right: 30px;
+    }
+
+    .about-main .about-text {
+        font-size: 16px;
+    }
+
+    .about-main .item-title {
+        font-size: 18px;
+        line-height: 1.5;
+    }
+
+    .about-phones .phones__item {
+        font-size: 18px;
+    }
+
+    .about-phones {
+        margin-bottom: 25px;
+    }
+
+    .about .list_social .social__link {
+        width: 20px;
+        height: 20px;
+    }
+    /* about page end*/
+
 }
 
 @media (max-width: 992px) {
+    h2 {
+        margin-bottom: 30px;
+    }
+
     .phones_header .phones__item {
         display: block;
         margin-bottom: 7px;
@@ -1035,9 +1085,46 @@ select {
         line-height: 14px;
         margin-right: 20px;
     }
+
+    /* about page */
+    .about {
+        margin-bottom: 15px;
+    }
+
+    .about-main .item-title {
+        text-align: left;
+    }
+
+    .container_about {
+        flex-wrap: wrap;
+    }
+
+    .about-item_services {
+        flex: 100%;
+        margin-right: 0;
+    }
+
+    .about-item_methods {
+        align-items: flex-start;
+        width: 100%
+    }
+
+    .transfer-text {
+        flex: 1;
+        margin-right:0;
+    }
+
+    .transfer-img {
+        display: none;
+    }
+    /* about page end */
 }
 
 @media (max-width: 768px) {
+    .phones_header {
+        display: none;
+    }
+
     .hero {
         min-height: 330px;
         padding-bottom: 20px;
@@ -1052,11 +1139,6 @@ select {
     .main-title span {
         font-size: 30px;
         line-height: 40px;
-    }
-
-    .phones-block {
-        font-size: 18px;
-        margin-bottom: 40px;
     }
 
     .phones-block .phones__icon {

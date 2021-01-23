@@ -56,9 +56,9 @@ Template Name: Страница - о нас
       </div><!-- container_about -->
     </section><!-- about -->
 
-    <section class="transfer">
+    <div class="transfer container">
       <p class="item-title">Трансфер Аэропорт “Платов”</p>
-      <div class="wrapper-transfer container">
+      <div class="wrapper-transfer">
         <div class="item transfer-text">
           <div class="about-text">
             <p>
@@ -92,10 +92,10 @@ Template Name: Страница - о нас
           </div>
         </div>
         <div class="item transfer-img">
-
+          <img src="img/transfer-platov.jpg" alt="">
         </div>
       </div>
-    </section><!-- transfer -->
+    </div><!-- transfer -->
 
   </main>
 <?php include 'footer.php'?>
