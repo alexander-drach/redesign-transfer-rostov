@@ -30,7 +30,7 @@
           <a href="#">Оферта</a>
         </div>
         <span>&copy; <?php echo date('Y') ?> РостовЮгТрансфер</span>
-        <a href="#">Design by S. Polyanskay@</a>
+        <a class="author" href="#">Design by S. Polyanskay@</a>
       </div><!-- copyright -->
     </div><!-- container -->
   </footer>
