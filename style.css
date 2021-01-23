@@ -685,7 +685,7 @@ textarea {
     text-decoration: underline;
 }
 
-.order-btn {
+.booking .order-btn {
     padding: 11px 43px 11px 15px;
     border: 2px solid var(--green);
     color: rgba(2, 134, 31, 0.8);
@@ -698,6 +698,7 @@ textarea {
     font-weight: bold;
     font-size: 20px;
     font-family: "Montserrat Alternates", serif;
+    text-decoration: none;
     border-radius: 20px;
     box-shadow: 1px 1px 2px rgba(255, 255, 255, 0.25);
 }
