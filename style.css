@@ -5,7 +5,7 @@
 
 html {
     height: 100%;
-  }
+}
 
 :root {
     --titles: #19017a;
@@ -48,7 +48,6 @@ button:hover {
     max-width: 1280px;
     padding: 0 15px;
     margin: 0 auto;
-    /*outline: 1px solid green;*/
 }
 
 h1,
@@ -260,7 +259,12 @@ textarea {
     position: fixed;
     width: 100%;
     height: 100%;
-    background: linear-gradient(180deg, rgba(25, 1, 122, 0.9) 13.54%, rgba(72, 67, 143, 0.7) 78.65%, rgba(114, 201, 228, 0.5) 96.87%);
+    background: linear-gradient(
+        180deg,
+        rgba(25, 1, 122, 0.9) 13.54%,
+        rgba(72, 67, 143, 0.7) 78.65%,
+        rgba(114, 201, 228, 0.5) 96.87%
+    );
     z-index: 50;
     padding-top: 100px;
     overflow-y: auto;
@@ -314,7 +318,7 @@ textarea {
     text-align: center;
 }
 
-.header-page.open .main-menu li a{
+.header-page.open .main-menu li a {
     color: #ffffff;
 }
 /* header end*/
@@ -475,41 +479,37 @@ textarea {
 
 /* FRONT-PAGE */
 
-/*tabs */
-
-.list_rates {
-
-}
-
-.list__item {
-
-}
-
-.rates__title {
-
-}
-
-.rates__thumb {
-
-}
-
-.rates__info {
-
-}
-/*tabs end */
-
 /* rates */
 .rates {
     margin-bottom: 90px;
 }
 
-.rates .title-section {
-    text-align: left;
-}
-
 .rates .routs__link {
     font-weight: bold;
 }
+
+.rates .list__item {
+    width: calc(100% / 3 - 75px);
+}
+
+.list_rates {
+    display: flex;
+    justify-content: space-between;
+}
+
+.rates__title {
+    font-weight: bold;
+    font-size: 26px;
+    line-height: 30px;
+    text-decoration: underline;
+    text-decoration-color: var(--orange);
+}
+
+.rates__title,
+.rates__info {
+    text-align: center;
+}
+
 /* rates end*/
 
 /* services */
@@ -523,16 +523,24 @@ textarea {
 
 .wrapper-list-services {
     display: flex;
+    flex-direction: column;
+    width: 55%;
 }
 
-.wrapper-list-services .wrapper__item {
-    width: 50%;
+.wrapper__item {
+    width: 100%;
 }
 
-.wrapper__item:first-child {
+.services__wrap {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* .wrapper__item:first-child {
     margin-right: 30px;
-}
-.wrapper-list-services .list__item {
+} */
+
+.wrapper__item .list__item {
     position: relative;
     margin-bottom: 20px;
     padding-left: 35px;
@@ -540,7 +548,7 @@ textarea {
     line-height: 36px;
 }
 
-.wrapper-list-services .list__item:before {
+.wrapper__item .list__item:before {
     content: "";
     position: absolute;
     left: 0;
@@ -567,7 +575,7 @@ textarea {
 }
 
 .booking p {
-    font-family: 'Montserrat Alternates';
+    font-family: "Montserrat Alternates";
     font-style: normal;
     font-weight: bold;
     font-size: 32px;
@@ -638,8 +646,6 @@ textarea {
     color: var(--titles);
     /* letter-spacing: 0.01em; */
 }
-
-
 
 .list__desc {
     font-size: 22px;
@@ -726,6 +732,11 @@ textarea {
 .routs .title-section {
     margin-bottom: 90px;
 }
+
+.routs__btn {
+    text-align: center;
+    display: none;
+}
 /* routs end */
 
 /* FRONT-PAGE END*/
@@ -771,7 +782,7 @@ textarea {
 }
 
 .label span,
-.radio span{
+.radio span {
     color: #bdbdbd;
     font-weight: bold;
 }
@@ -820,16 +831,20 @@ select {
 /* BOOKING-PAGE END */
 
 /* ABOUT-PAGE */
-.about-main .about-text {
+.about-text {
     font-size: 22px;
 }
 
-.about-main .item-title {
+.item-title {
     font-size: 32px;
     line-height: 42px;
     text-align: center;
     /* letter-spacing: 0.01em; */
     font-weight: bold;
+}
+
+.item-title a {
+    text-decoration: underline;
 }
 /* about */
 .about {
@@ -849,6 +864,7 @@ select {
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
     width: 500px;
 }
 
@@ -980,6 +996,10 @@ select {
         margin-bottom: 40px;
     }
 
+    .rates .list__item {
+        width: calc(100% / 3 - 50px);
+    }
+
     /* booking page */
     .container_form {
         padding-left: 15px;
@@ -1023,7 +1043,6 @@ select {
         height: 20px;
     }
     /* about page end*/
-
 }
 
 @media (max-width: 992px) {
@@ -1046,6 +1065,18 @@ select {
 
     .phones_header .phones__item:last-child {
         margin-bottom: 0;
+    }
+
+    .list_rates {
+        padding: 30px;
+    }
+
+    .rates .list__item {
+        width: calc(100% / 3 - 30px);
+    }
+
+    .about-item_methods {
+        display: none;
     }
 
     .booking .phones__item {
@@ -1079,12 +1110,12 @@ select {
 
     .about-item_methods {
         align-items: flex-start;
-        width: 100%
+        width: 100%;
     }
 
     .transfer-text {
         flex: 1;
-        margin-right:0;
+        margin-right: 0;
     }
 
     .transfer-img {
@@ -1122,6 +1153,27 @@ select {
 
     .tabs-content {
         margin-bottom: 60px;
+    }
+
+    .rates {
+        margin-bottom: 70px;
+    }
+
+    .rates .list__item {
+        width: calc(100% / 3 - 10px);
+    }
+
+    .rates__thumb {
+        max-width: 150px;
+        margin: auto;
+    }
+
+    .rates .title-section {
+        text-align: center;
+    }
+
+    .routs__btn {
+        display: block;
     }
 
     .booking {
@@ -1162,10 +1214,6 @@ select {
         font-size: 28px;
         line-height: 38px;
         /* letter-spacing: 0.01em; */
-    }
-
-    .rates .title-section {
-        text-align: center;
     }
 
     .tabs {
@@ -1211,8 +1259,6 @@ select {
     .features .list__item {
         width: calc(100% / 2 - 50px);
         margin-bottom: 30px;
-        /* margin-left: 20px;
-        margin-right: 20px; */
         padding-left: 15px;
         padding-right: 15px;
     }
@@ -1229,10 +1275,11 @@ select {
         min-height: 250px;
     }
 
-    .tabs-wrapper .routs__link {
+    .routs__link {
         display: block;
         margin: auto;
         width: 240px;
+        padding: 12px 0;
         background: radial-gradient(50% 50% at 50% 50%, #02861f 28.65%, #016f19 100%), rgba(2, 134, 31, 0.8);
         box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.25);
         color: #ffffff;
@@ -1244,6 +1291,8 @@ select {
 
     .wrapper-list-services {
         padding: 0 45px;
+        display: flex;
+        justify-content: space-between;
     }
 
     .routs__title {
@@ -1272,7 +1321,7 @@ select {
         font-size: 18px;
         line-height: 28px;
         letter-spacing: 0.01em;
-        font-family: 'Montserrat Alternates'; 
+        font-family: "Montserrat Alternates";
     }
 
     .footer-page h3,
@@ -1281,7 +1330,7 @@ select {
         font-size: 20px;
         line-height: 30px;
         font-weight: bold;
-        font-family: 'Roboto';
+        font-family: "Roboto";
     }
 
     .email-footer {
@@ -1291,7 +1340,7 @@ select {
     .phohes_footer {
         font-weight: bold;
         margin-bottom: 20px;
-        font-family: 'Roboto';
+        font-family: "Roboto";
     }
 
     .wrapper-list-services .list__item {
@@ -1362,7 +1411,6 @@ select {
 }
 
 @media (max-width: 700px) {
-
     .booking__call {
         display: flex;
         flex-direction: column;
@@ -1418,7 +1466,8 @@ select {
         flex-wrap: wrap;
     }
 
-    .field-group label, .radio-group {
+    .field-group label,
+    .radio-group {
         width: 100%;
         margin-bottom: 20px;
     }
@@ -1563,7 +1612,4 @@ select {
 }
 
 @media (max-width: 375px) {
-    
 }
-
-
