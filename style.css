@@ -323,109 +323,6 @@ textarea {
 }
 /* header end*/
 
-/* footer */
-.footer-page {
-    text-align: center;
-    background: linear-gradient(
-        180deg,
-        rgba(207, 238, 252, 0) 0%,
-        rgba(181, 228, 250, 0.32) 40.52%,
-        rgba(157, 219, 248, 0.8) 99.48%
-    );
-}
-
-.footer-page a {
-    color: var(--text);
-}
-
-.footer-page h3,
-.email-footer {
-    font-size: 26px;
-    font-weight: 400;
-}
-
-.email-footer,
-.phohes_footer {
-    margin-bottom: 70px;
-}
-
-.phohes_footer {
-    display: flex;
-    flex-direction: column;
-    font-size: 22px;
-    line-height: 32px;
-    font-weight: 600;
-}
-
-.email-footer a {
-    font-family: "Roboto";
-    font-weight: bold;
-    font-size: 32px;
-    line-height: 42px;
-}
-
-.social-title,
-.phones-title {
-    margin-bottom: 30px;
-}
-
-.footer-social {
-    margin-bottom: 60px;
-}
-
-.footer-social .social__link_vk {
-    background-image: url(./img/icons/social/footer/icon-vk-footer.svg);
-}
-
-.footer-social .social__link_facebook {
-    background-image: url(./img/icons/social/footer/icon-facebook-footer.svg);
-}
-
-.footer-social .social__link_instagram {
-    background-image: url(./img/icons/social/footer/icon-instagram-footer.svg);
-}
-
-.footer-social .social__link_twitter {
-    background-image: url(./img/icons/social/footer/icon-twitter-footer.svg);
-}
-
-.footer-social .social__link_youtube {
-    background-image: url(./img/icons/social/footer/icon-youtube-footer.svg);
-}
-
-.footer-menu {
-    display: flex;
-    justify-content: center;
-    margin-bottom: 60px;
-}
-
-.footer-menu li {
-    font-size: 22px;
-    margin-right: 40px;
-}
-
-.footer-menu li:last-child {
-    margin-right: 0;
-}
-
-.copyright {
-    display: flex;
-    justify-content: space-between;
-    padding-bottom: 25px;
-    font-size: 12px;
-    line-height: 14px;
-}
-
-.law {
-    text-decoration: underline;
-}
-
-.law a:first-child {
-    margin-right: 30px;
-}
-
-/* footer end*/
-
 /* hero */
 .hero {
     display: flex;
@@ -536,10 +433,6 @@ textarea {
     justify-content: space-between;
 }
 
-/* .wrapper__item:first-child {
-    margin-right: 30px;
-} */
-
 .wrapper__item .list__item {
     position: relative;
     margin-bottom: 20px;
@@ -644,7 +537,6 @@ textarea {
     line-height: 40px;
     margin-bottom: 25px;
     color: var(--titles);
-    /* letter-spacing: 0.01em; */
 }
 
 .list__desc {
@@ -738,6 +630,109 @@ textarea {
     display: none;
 }
 /* routs end */
+
+/* footer */
+.footer-page {
+    text-align: center;
+    background: linear-gradient(
+        180deg,
+        rgba(207, 238, 252, 0) 0%,
+        rgba(181, 228, 250, 0.32) 40.52%,
+        rgba(157, 219, 248, 0.8) 99.48%
+    );
+}
+
+.footer-page a {
+    color: var(--text);
+}
+
+.footer-page h3,
+.email-footer {
+    font-size: 26px;
+    font-weight: 400;
+}
+
+.email-footer,
+.phohes_footer {
+    margin-bottom: 70px;
+}
+
+.phohes_footer {
+    display: flex;
+    flex-direction: column;
+    font-size: 22px;
+    line-height: 32px;
+    font-weight: 600;
+}
+
+.email-footer a {
+    font-family: "Roboto";
+    font-weight: bold;
+    font-size: 32px;
+    line-height: 42px;
+}
+
+.social-title,
+.phones-title {
+    margin-bottom: 30px;
+}
+
+.footer-social {
+    margin-bottom: 60px;
+}
+
+.footer-social .social__link_vk {
+    background-image: url(./img/icons/social/footer/icon-vk-footer.svg);
+}
+
+.footer-social .social__link_facebook {
+    background-image: url(./img/icons/social/footer/icon-facebook-footer.svg);
+}
+
+.footer-social .social__link_instagram {
+    background-image: url(./img/icons/social/footer/icon-instagram-footer.svg);
+}
+
+.footer-social .social__link_twitter {
+    background-image: url(./img/icons/social/footer/icon-twitter-footer.svg);
+}
+
+.footer-social .social__link_youtube {
+    background-image: url(./img/icons/social/footer/icon-youtube-footer.svg);
+}
+
+.footer-menu {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 60px;
+}
+
+.footer-menu li {
+    font-size: 22px;
+    margin-right: 40px;
+}
+
+.footer-menu li:last-child {
+    margin-right: 0;
+}
+
+.copyright {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 25px;
+    font-size: 12px;
+    line-height: 14px;
+}
+
+.law {
+    text-decoration: underline;
+}
+
+.law a:first-child {
+    margin-right: 30px;
+}
+
+/* footer end */
 
 /* FRONT-PAGE END*/
 
@@ -1090,6 +1085,11 @@ select {
         margin-right: 20px;
     }
 
+    .wrapper-list-services {
+        width: 85%;
+        margin: auto;
+    }
+
     /* about page */
     .about {
         margin-bottom: 15px;
@@ -1125,6 +1125,10 @@ select {
 }
 
 @media (max-width: 768px) {
+    .servises {
+        margin-bottom: 60px;
+    }
+
     .phones_header {
         display: none;
     }
@@ -1169,6 +1173,19 @@ select {
     }
 
     .rates .title-section {
+        text-align: center;
+    }
+
+    .rates .routs__link {
+        margin: auto;
+        display: block;
+        width: 240px;
+        padding: 12px 0;
+        background: radial-gradient(50% 50% at 50% 50%, #02861f 28.65%, #016f19 100%), rgba(2, 134, 31, 0.8);
+        box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.25);
+        color: #ffffff;
+        text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.25);
+        font-size: 20px;
         text-align: center;
     }
 
@@ -1277,21 +1294,21 @@ select {
 
     .routs__link {
         display: block;
-        margin: auto;
         width: 240px;
         padding: 12px 0;
-        background: radial-gradient(50% 50% at 50% 50%, #02861f 28.65%, #016f19 100%), rgba(2, 134, 31, 0.8);
+        border: 2px solid var(--green);
+        color: rgba(2, 134, 31, 0.8);
+        background-color: #ffffff;
         box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.25);
-        color: #ffffff;
         text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.25);
         font-size: 20px;
-        /* letter-spacing: 0.01em; */
         text-align: center;
     }
 
     .wrapper-list-services {
-        padding: 0 45px;
-        display: flex;
+        padding: 0 30px;
+        width: 100%;
+        flex-direction: row;
         justify-content: space-between;
     }
 
@@ -1318,10 +1335,14 @@ select {
     }
 
     .list__desc {
-        font-size: 18px;
+        font-size: 22px;
         line-height: 28px;
         letter-spacing: 0.01em;
         font-family: "Montserrat Alternates";
+    }
+
+    .rates .list__desc {
+        font-size: 18px;
     }
 
     .footer-page h3,
@@ -1343,10 +1364,15 @@ select {
         font-family: "Roboto";
     }
 
+    .wrapper__item {
+        width: calc(100% / 2 - 24px);
+    }
+
     .wrapper-list-services .list__item {
         font-size: 16px;
         line-height: 26px;
         padding-left: 25px;
+        margin-bottom: 0;
     }
 
     .wrapper-list-services .list__item::before {
@@ -1415,15 +1441,28 @@ select {
         display: flex;
         flex-direction: column;
     }
+
+    .features .title-section {
+        max-width: 80%;
+        margin: 0 auto 30px;
+    }
 }
 
 @media (max-width: 640px) {
+    .servises {
+        margin-bottom: 40px;
+    }
+
     .wrapper-list-services {
         flex-wrap: wrap;
     }
 
     .wrapper-list-services .wrapper__item {
         width: 100%;
+    }
+
+    .wrapper-list-services .list__item {
+        font-size: 17px;
     }
 
     .wrapper__item:first-child {
@@ -1442,6 +1481,32 @@ select {
     .list_routs .list__item {
         width: 100%;
     }
+
+    .list_rates {
+        flex-direction: column;
+    }
+
+    .list_rates .list__item {
+        width: 100%;
+    }
+
+    .rates__thumb {
+        min-width: 100%;
+    }
+    .rates__thumb img {
+        margin: auto;
+    }
+
+    .rates__title {
+        margin: 0;
+        font-size: 32px;
+    }
+
+    .list__desc {
+        font-size: 18px;
+        line-height: 24px;
+    }
+
     .booking {
         margin-bottom: 60px;
     }
@@ -1555,6 +1620,10 @@ select {
         width: 170px;
     }
 
+    .wrapper-list-services {
+        padding: 0 5px;
+    }
+
     .features__icon,
     .features__title {
         margin-bottom: 10px;
@@ -1565,8 +1634,12 @@ select {
         margin-right: 0;
     }
 
+    .features .title-section {
+        max-width: 95%;
+    }
+
     .features .list__item {
-        width: 100%;
+        margin: 0 0 30px;
     }
 
     .footer-page h3,
