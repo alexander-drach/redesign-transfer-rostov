@@ -359,7 +359,7 @@ textarea {
     font-size: 32px;
     color: var(--titles);
     font-weight: bold;
-    margin-bottom: 90px;
+    margin-bottom: 60px;
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.25);
 }
 
@@ -488,7 +488,7 @@ textarea {
     text-decoration: underline;
 }
 
-.booking .order-btn {
+.order-btn {
     padding: 11px 43px 11px 15px;
     border: 2px solid var(--green);
     color: rgba(2, 134, 31, 0.8);
@@ -806,6 +806,10 @@ textarea {
     flex-direction: column;
 }
 
+/* .radio .driver {
+    width: 100%;
+} */
+
 form .order-btn {
     position: relative;
     left: 50%;
@@ -826,16 +830,23 @@ select {
 /* BOOKING-PAGE END */
 
 /* ABOUT-PAGE */
+
 .about-text {
     font-size: 22px;
+    line-height: 42px;
+    letter-spacing: 0.02em;
+}
+
+.transfer .about-text p {
+    margin: 0;
 }
 
 .item-title {
     font-size: 32px;
     line-height: 42px;
     text-align: center;
-    /* letter-spacing: 0.01em; */
     font-weight: bold;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.25);
 }
 
 .item-title a {
@@ -846,8 +857,18 @@ select {
     margin-bottom: 90px;
 }
 
-.container_about {
-    display: flex;
+.about .container {
+    max-width: 1320px;
+    padding: 0;
+}
+
+.service-taxi {
+    margin-bottom: 120px;
+}
+
+.service-taxi .transfer-text {
+    margin-right: 0;
+    margin-left: 90px;
 }
 
 .about-item_services {
@@ -934,10 +955,6 @@ select {
     margin-bottom: 50px;
 }
 
-.transfer .item-title {
-    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.25);
-}
-
 .transfer-text {
     flex: 1;
     margin-right: 50px;
@@ -945,7 +962,7 @@ select {
 
 .transfer-img {
     position: relative;
-    width: 600px;
+    width: 640px;
     border-radius: 20px;
     overflow: hidden;
 }
@@ -959,6 +976,7 @@ select {
 }
 
 /* transfer end */
+
 /* ABOUT-PAGE END */
 
 /* MEDIA QUERY */
@@ -991,6 +1009,10 @@ select {
         margin-bottom: 40px;
     }
 
+    .services__wrap {
+        padding: 0 30px;
+    }
+
     .rates .list__item {
         width: calc(100% / 3 - 50px);
     }
@@ -1016,13 +1038,9 @@ select {
         margin-right: 30px;
     }
 
-    .about-main .about-text {
-        font-size: 16px;
-    }
-
-    .about-main .item-title {
+    .about .about-text {
         font-size: 18px;
-        line-height: 1.5;
+        line-height: 32px;
     }
 
     .about-phones .phones__item {
@@ -1037,6 +1055,27 @@ select {
         width: 20px;
         height: 20px;
     }
+
+    .about .container {
+        padding: 0 30px;
+    }
+
+    .wrapper-transfer {
+        padding: 0 15px;
+    }
+
+    .transfer-text {
+        margin-right: 30px;
+    }
+
+    .service-taxi .transfer-text {
+        margin-left: 50px;
+    }
+
+    .wrapper-transfer .item {
+        width: calc(100% / 2 - 20px);
+    }
+
     /* about page end*/
 }
 
@@ -1095,10 +1134,6 @@ select {
         margin-bottom: 15px;
     }
 
-    .about-main .item-title {
-        text-align: left;
-    }
-
     .container_about {
         flex-wrap: wrap;
     }
@@ -1118,8 +1153,20 @@ select {
         margin-right: 0;
     }
 
+    .transfer .about-text p {
+        margin: revert;
+    }
+
     .transfer-img {
         display: none;
+    }
+
+    .service-taxi {
+        margin-bottom: 50px;
+    }
+
+    .service-taxi .transfer-text {
+        margin: 0;
     }
     /* about page end */
 }
@@ -1127,6 +1174,10 @@ select {
 @media (max-width: 768px) {
     .servises {
         margin-bottom: 60px;
+    }
+
+    .services__wrap {
+        padding: 0;
     }
 
     .phones_header {
@@ -1345,6 +1396,10 @@ select {
         font-size: 18px;
     }
 
+    .radio {
+        flex-wrap: wrap;
+    }
+
     .footer-page h3,
     .email-footer,
     .email-footer a {
@@ -1446,6 +1501,10 @@ select {
         max-width: 80%;
         margin: 0 auto 30px;
     }
+
+    .wrapper__item {
+        width: calc(100% / 2 - 10px);
+    }
 }
 
 @media (max-width: 640px) {
@@ -1526,8 +1585,7 @@ select {
     }
 
     /* booking page */
-    .field-group,
-    .radio {
+    .field-group {
         flex-wrap: wrap;
     }
 
@@ -1606,6 +1664,10 @@ select {
         line-height: 12px;
     }
 
+    .services__wrap {
+        padding: 0 20px;
+    }
+
     .booking a {
         text-decoration: none;
     }
@@ -1682,7 +1744,22 @@ select {
     .header-page.open .close-menu {
         right: 30px;
     }
+
+    .item-title {
+        font-size: 24px;
+        line-height: 32px;
+    }
 }
 
 @media (max-width: 375px) {
+    .item-title {
+        font-size: 20px;
+        line-height: 24px;
+    }
+
+    .about .about-text {
+        font-size: 16px;
+        line-height: 28px;
+        text-align: center;
+    }
 }
