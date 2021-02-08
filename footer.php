@@ -2,7 +2,7 @@
 
   <footer class="footer-page">
     <div class="container">
-      <h2 id="contact" class="title-section">Контакты</h2>
+      <h2 class="title-section" id="contact">Контакты</h2>
       <h3 class="phones-title">Наши телефоны</h3>
       <div class="phones phohes_footer">
         <?php include 'includes/phones.php'?>
@@ -11,12 +11,13 @@
         Эл. почта: <a href="mailto:taxiizrostova@gmail.com">taxiizrostova@gmail.com</a>
       </p>
       <h3 class="social-title">Мы в соц. сетях</h3>
-      <ul class="list list_social footer-social">
+      <ul class="list list_social footer__social">
 
         <?php include 'includes/social.php'?>
 
       </ul>
-      <ul class="list footer-menu">
+      <ul class="list footer__menu">
+        
         <li><a href="index.php">Главная</a></li>
         <li><a href="index.php#services">Услуги</a></li>
         <li><a href="index.php#routs">Направления</a></li>

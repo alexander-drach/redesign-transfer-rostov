@@ -191,19 +191,16 @@ textarea {
     color: var(--text);
 }
 
-.booking .phones__item {
-    font-family: "Roboto";
-    font-style: italic;
-    font-size: 36px;
-    line-height: 46px;
-}
-
 .phones_header .phones__item:first-child {
     margin-right: 20px;
 }
 
 .nav {
     margin-left: 60px;
+}
+
+.main-menu {
+    display: none;
 }
 
 .hamb {
@@ -245,9 +242,7 @@ textarea {
     border-radius: 4px;
 }
 
-.main-menu {
-    display: none;
-}
+/* HAMBURGER AND HIDDEN MENU */
 
 .close-menu {
     display: none;
@@ -321,6 +316,9 @@ textarea {
 .header-page.open .main-menu li a {
     color: #ffffff;
 }
+
+/* HAMBURGER AND HIDDEN MENU */
+
 /* header end*/
 
 /* hero */
@@ -342,7 +340,6 @@ textarea {
     margin-bottom: 0;
     font-size: 40px;
     line-height: 50px;
-    /* letter-spacing: 0.01em; */
     text-shadow: 1px 2px 2px rgba(0, 0, 0, 0.25);
 }
 
@@ -376,12 +373,224 @@ textarea {
 
 /* FRONT-PAGE */
 
+/* services */
+.servises {
+    margin-bottom: 90px;
+}
+
+.servises .sub-title {
+    display: none;
+}
+
+.services__wrap {
+    display: flex;
+    justify-content: space-between;
+}
+
+.wrapper-list-services {
+    display: flex;
+    flex-direction: column;
+    width: 55%;
+}
+
+.wrapper__item {
+    width: 100%;
+}
+
+.wrapper__item .list__item {
+    position: relative;
+    margin-bottom: 20px;
+    padding-left: 35px;
+    font-size: 26px;
+    line-height: 36px;
+}
+
+.wrapper__item .list__item:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 7px;
+    display: block;
+    width: 20px;
+    height: 20px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url(./img/icons/icon-list-marker.svg);
+}
+/* services end */
+
+/* contacts */
+
+.contacts__item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 500px;
+    color: #27323a;
+}
+
+.item-title {
+    font-size: 32px;
+    line-height: 42px;
+    text-align: center;
+    font-weight: bold;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.25);
+}
+
+.item-title a {
+    text-decoration: underline;
+}
+
+.about-text {
+    font-size: 22px;
+    line-height: 42px;
+    letter-spacing: 0.02em;
+}
+
+.contacts__item .about-text {
+    margin-bottom: 5px;
+}
+
+.contacts__items .about-text a {
+    text-decoration: underline;
+}
+
+.contacts__items .messengers {
+    margin-top: 15px;
+    margin-bottom: 30px;
+}
+
+.contacts__item .about-text p {
+    margin-bottom: 25px;
+    line-height: 1.5;
+}
+
+.contacts__phones {
+    margin-bottom: 40px;
+}
+
+.contacts__phones .phones__item {
+    display: block;
+    font-size: 32px;
+    color: var(--titles);
+    font-weight: bold;
+}
+
+.phones-block .phones__item {
+    border-bottom: 2px solid var(--orange);
+}
+
+.contacts__social {
+    margin-top: 15px;
+    margin-bottom: 30px;
+}
+
+.contacts__social .social__link_vk {
+    background-image: url(./img/icons/social/icon-vk.svg);
+}
+
+.contacts__social .social__link_facebook {
+    background-image: url(./img/icons/social/icon-facebook.svg);
+}
+
+.contacts__social .social__link_instagram {
+    background-image: url(./img/icons/social/icon-instagram.svg);
+}
+
+.contacts__social .social__link_twitter {
+    background-image: url(./img/icons/social/icon-twitter.svg);
+}
+
+.contacts__social .social__link_youtube {
+    background-image: url(./img/icons/social/icon-youtube.svg);
+}
+/* contacts end */
+
+/* booking */
+
+.booking {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url(./img/bg-booking-front.jpg);
+    padding: 40px 15px;
+    margin-bottom: 90px;
+}
+
+.booking p {
+    font-family: "Montserrat Alternates";
+    font-style: normal;
+    font-weight: bold;
+    font-size: 32px;
+    line-height: 42px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.25);
+    color: #ffffff;
+    margin-bottom: 40px;
+}
+
+.booking a {
+    color: #ffffff;
+    margin: 0 15px;
+    text-decoration: underline;
+}
+
+.booking .order-btn {
+    color: rgba(2, 134, 31, 0.8);
+}
+
+.order-btn {
+    padding: 11px 43px 11px 15px;
+    border: 2px solid var(--green);
+    color: rgba(2, 134, 31, 0.8);
+    text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.25);
+    background-color: #ffffff;
+    background-repeat: no-repeat;
+    background-size: 20px;
+    background-image: url(./img/icons/icon-btn-booking.svg);
+    background-position: right 12px center;
+    font-weight: bold;
+    font-size: 20px;
+    font-family: "Montserrat Alternates", serif;
+    text-decoration: none;
+    border-radius: 20px;
+    box-shadow: 1px 1px 2px rgba(255, 255, 255, 0.25);
+}
+
+.booking .phones__item {
+    font-family: "Roboto";
+    font-style: italic;
+    font-size: 36px;
+    line-height: 46px;
+}
+
+/* booking end*/
+
 /* rates */
+
 .rates {
     margin-bottom: 90px;
 }
 
-.rates .routs__link {
+.booking__link {
+    position: relative;
+    min-width: 200px;
+    padding: 12px 40px;
+    background-color: #ffffff;
+    color: var(--green);
+    font-size: 22px;
+    border: 2px solid var(--green);
+    border-radius: 20px;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.25);
+    z-index: 1;
+}
+
+.rates .booking__link {
     font-weight: bold;
 }
 
@@ -407,107 +616,15 @@ textarea {
     text-align: center;
 }
 
+.booking__btn {
+    text-align: center;
+    margin-top: 50px;
+}
+
 /* rates end*/
 
-/* services */
-.servises {
-    margin-bottom: 90px;
-}
-
-.servises .sub-title {
-    display: none;
-}
-
-.wrapper-list-services {
-    display: flex;
-    flex-direction: column;
-    width: 55%;
-}
-
-.wrapper__item {
-    width: 100%;
-}
-
-.services__wrap {
-    display: flex;
-    justify-content: space-between;
-}
-
-.wrapper__item .list__item {
-    position: relative;
-    margin-bottom: 20px;
-    padding-left: 35px;
-    font-size: 26px;
-    line-height: 36px;
-}
-
-.wrapper__item .list__item:before {
-    content: "";
-    position: absolute;
-    left: 0;
-    top: 7px;
-    display: block;
-    width: 20px;
-    height: 20px;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-image: url(./img/icons/icon-list-marker.svg);
-}
-/* services end */
-
-/* booking */
-.booking {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-image: url(./img/bg-booking-front.jpg);
-    padding: 40px 15px;
-    margin-bottom: 90px;
-}
-
-.booking p {
-    font-family: "Montserrat Alternates";
-    font-style: normal;
-    font-weight: bold;
-    font-size: 32px;
-    line-height: 42px;
-    display: flex;
-    align-items: center;
-    text-align: center;
-    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.25);
-    /* letter-spacing: 0.01em; */
-    color: #ffffff;
-    margin-bottom: 40px;
-}
-
-.booking a {
-    color: #ffffff;
-    margin: 0 15px;
-    text-decoration: underline;
-}
-
-.order-btn {
-    padding: 11px 43px 11px 15px;
-    border: 2px solid var(--green);
-    color: rgba(2, 134, 31, 0.8);
-    text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.25);
-    background-color: #ffffff;
-    background-repeat: no-repeat;
-    background-size: 20px;
-    background-image: url(./img/icons/icon-btn-booking.svg);
-    background-position: right 12px center;
-    font-weight: bold;
-    font-size: 20px;
-    font-family: "Montserrat Alternates", serif;
-    text-decoration: none;
-    border-radius: 20px;
-    box-shadow: 1px 1px 2px rgba(255, 255, 255, 0.25);
-}
-/* booking end*/
-
 /* features */
+
 .features {
     margin-bottom: 90px;
 }
@@ -553,6 +670,10 @@ textarea {
     padding-bottom: 55px;
 }
 
+.routs .title-section {
+    margin-bottom: 90px;
+}
+
 .list_routs {
     display: flex;
     flex-wrap: wrap;
@@ -591,6 +712,14 @@ textarea {
     height: 100%;
 }
 
+.routs__title {
+    position: relative;
+    font-size: 32px;
+    color: var(--orange);
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.25);
+    z-index: 1;
+}
+
 .routs__overlay {
     position: absolute;
     left: 0;
@@ -600,35 +729,6 @@ textarea {
     background: linear-gradient(0deg, rgba(70, 70, 70, 0.5), rgba(70, 70, 70, 0.5));
 }
 
-.routs__title {
-    position: relative;
-    font-size: 32px;
-    color: var(--orange);
-    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.25);
-    z-index: 1;
-}
-
-.routs__link {
-    position: relative;
-    min-width: 200px;
-    padding: 12px 40px;
-    background-color: #ffffff;
-    color: var(--green);
-    font-size: 22px;
-    border: 2px solid var(--green);
-    border-radius: 20px;
-    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.25);
-    z-index: 1;
-}
-
-.routs .title-section {
-    margin-bottom: 90px;
-}
-
-.routs__btn {
-    text-align: center;
-    display: none;
-}
 /* routs end */
 
 /* footer */
@@ -677,42 +777,42 @@ textarea {
     margin-bottom: 30px;
 }
 
-.footer-social {
+.footer__social {
     margin-bottom: 60px;
 }
 
-.footer-social .social__link_vk {
+.footer__social .social__link_vk {
     background-image: url(./img/icons/social/footer/icon-vk-footer.svg);
 }
 
-.footer-social .social__link_facebook {
+.footer__social .social__link_facebook {
     background-image: url(./img/icons/social/footer/icon-facebook-footer.svg);
 }
 
-.footer-social .social__link_instagram {
+.footer__social .social__link_instagram {
     background-image: url(./img/icons/social/footer/icon-instagram-footer.svg);
 }
 
-.footer-social .social__link_twitter {
+.footer__social .social__link_twitter {
     background-image: url(./img/icons/social/footer/icon-twitter-footer.svg);
 }
 
-.footer-social .social__link_youtube {
+.footer__social .social__link_youtube {
     background-image: url(./img/icons/social/footer/icon-youtube-footer.svg);
 }
 
-.footer-menu {
+.footer__menu {
     display: flex;
     justify-content: center;
     margin-bottom: 60px;
 }
 
-.footer-menu li {
+.footer__menu li {
     font-size: 22px;
     margin-right: 40px;
 }
 
-.footer-menu li:last-child {
+.footer__menu li:last-child {
     margin-right: 0;
 }
 
@@ -737,6 +837,7 @@ textarea {
 /* FRONT-PAGE END*/
 
 /* BOOKING-PAGE */
+
 .container_form {
     max-width: 1000px;
     margin: 0 auto 100px auto;
@@ -748,7 +849,6 @@ textarea {
     font-weight: bold;
     font-size: 32px;
     line-height: 42px;
-    /* letter-spacing: 0.01em; */
     color: var(--titles);
 }
 
@@ -763,6 +863,12 @@ textarea {
     margin-bottom: 18px;
 }
 
+.label span,
+.radio span {
+    color: #bdbdbd;
+    font-weight: bold;
+}
+
 .input {
     background: #f2f2f2;
     border: 1px solid #bdbdbd;
@@ -774,12 +880,7 @@ textarea {
 textarea {
     resize: vertical;
     font-size: 20px;
-}
-
-.label span,
-.radio span {
-    color: #bdbdbd;
-    font-weight: bold;
+    margin-top: 10px;
 }
 
 .field-group {
@@ -792,10 +893,6 @@ textarea {
     width: calc(100% / 2 - 40px);
 }
 
-textarea {
-    margin-top: 10px;
-}
-
 .radio {
     display: flex;
     justify-content: space-between;
@@ -804,17 +901,6 @@ textarea {
 .radio-group {
     display: flex;
     flex-direction: column;
-}
-
-/* .radio .driver {
-    width: 100%;
-} */
-
-form .order-btn {
-    position: relative;
-    left: 50%;
-    transform: translate(-50%, 0);
-    margin-top: 90px;
 }
 
 select {
@@ -827,32 +913,18 @@ select {
     border-radius: 5px;
     font-size: 20px;
 }
+
+form .order-btn {
+    position: relative;
+    left: 50%;
+    transform: translate(-50%, 0);
+    margin-top: 90px;
+}
+
 /* BOOKING-PAGE END */
 
 /* ABOUT-PAGE */
 
-.about-text {
-    font-size: 22px;
-    line-height: 42px;
-    letter-spacing: 0.02em;
-}
-
-.transfer .about-text p {
-    margin: 0;
-}
-
-.item-title {
-    font-size: 32px;
-    line-height: 42px;
-    text-align: center;
-    font-weight: bold;
-    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.25);
-}
-
-.item-title a {
-    text-decoration: underline;
-}
-/* about */
 .about {
     margin-bottom: 90px;
 }
@@ -866,89 +938,14 @@ select {
     margin-bottom: 120px;
 }
 
+.wrapper-transfer {
+    display: flex;
+}
+
 .service-taxi .transfer-text {
     margin-right: 0;
     margin-left: 90px;
 }
-
-.about-item_services {
-    flex: 1;
-    margin-right: 170px;
-}
-
-.about-item_methods {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    width: 500px;
-}
-
-.about-item_methods .about-text {
-    margin-bottom: 5px;
-}
-
-.about-item_methods .about-text a {
-    text-decoration: underline;
-}
-
-.about-item_methods .messengers {
-    margin-top: 15px;
-    margin-bottom: 30px;
-}
-
-.about-item {
-    color: #27323a;
-}
-
-.about-item .about-text p {
-    margin-bottom: 25px;
-    line-height: 1.5;
-}
-
-.about-phones {
-    margin-bottom: 40px;
-}
-
-.about-phones .phones__item {
-    display: block;
-    font-size: 32px;
-    color: var(--titles);
-    font-weight: bold;
-}
-
-.phones-block .phones__item,
-.tabs-header__item {
-    border-bottom: 2px solid var(--orange);
-}
-
-.about-social {
-    margin-top: 15px;
-    margin-bottom: 30px;
-}
-
-.about-social .social__link_vk {
-    background-image: url(./img/icons/social/icon-vk.svg);
-}
-
-.about-social .social__link_facebook {
-    background-image: url(./img/icons/social/icon-facebook.svg);
-}
-
-.about-social .social__link_instagram {
-    background-image: url(./img/icons/social/icon-instagram.svg);
-}
-
-.about-social .social__link_twitter {
-    background-image: url(./img/icons/social/icon-twitter.svg);
-}
-
-.about-social .social__link_youtube {
-    background-image: url(./img/icons/social/icon-youtube.svg);
-}
-/* about end */
-
-/* transfer */
 
 .transfer {
     color: #4f4f4f;
@@ -958,6 +955,10 @@ select {
 .transfer-text {
     flex: 1;
     margin-right: 50px;
+}
+
+.transfer .about-text p {
+    margin: 0;
 }
 
 .transfer-img {
@@ -971,24 +972,18 @@ select {
     width: 100%;
 }
 
-.wrapper-transfer {
-    display: flex;
-}
-
-/* transfer end */
-
 /* ABOUT-PAGE END */
 
 /* MEDIA QUERY */
 
 @media (max-width: 1439px) {
+    .logo {
+        margin-right: 30px;
+    }
+
     .header-contact-menu {
         justify-content: space-between;
         flex: 1;
-    }
-
-    .logo {
-        margin-right: 30px;
     }
 
     .phones_header {
@@ -1009,15 +1004,20 @@ select {
         margin-bottom: 40px;
     }
 
-    .services__wrap {
-        padding: 0 30px;
-    }
-
     .rates .list__item {
         width: calc(100% / 3 - 50px);
     }
 
+    .contacts__phones {
+        margin-bottom: 25px;
+    }
+
+    .contacts__phones .phones__item {
+        font-size: 18px;
+    }
+
     /* booking page */
+
     .container_form {
         padding-left: 15px;
         padding-right: 15px;
@@ -1033,9 +1033,13 @@ select {
     /* booking page end */
 
     /* about page */
-    .about-item_services {
-        flex: 1;
-        margin-right: 30px;
+
+    .about .container {
+        padding: 0 30px;
+    }
+
+    .services__wrap {
+        padding: 0 30px;
     }
 
     .about .about-text {
@@ -1043,37 +1047,20 @@ select {
         line-height: 32px;
     }
 
-    .about-phones .phones__item {
-        font-size: 18px;
-    }
-
-    .about-phones {
-        margin-bottom: 25px;
-    }
-
-    .about .list_social .social__link {
-        width: 20px;
-        height: 20px;
-    }
-
-    .about .container {
-        padding: 0 30px;
-    }
-
     .wrapper-transfer {
         padding: 0 15px;
     }
 
-    .transfer-text {
-        margin-right: 30px;
+    .wrapper-transfer .item {
+        width: calc(100% / 2 - 20px);
     }
 
     .service-taxi .transfer-text {
         margin-left: 50px;
     }
 
-    .wrapper-transfer .item {
-        width: calc(100% / 2 - 20px);
+    .transfer-text {
+        margin-right: 30px;
     }
 
     /* about page end*/
@@ -1082,6 +1069,11 @@ select {
 @media (max-width: 992px) {
     h2 {
         margin-bottom: 30px;
+    }
+
+    .wrapper-list-services {
+        width: 85%;
+        margin: auto;
     }
 
     .phones_header .phones__item {
@@ -1101,15 +1093,7 @@ select {
         margin-bottom: 0;
     }
 
-    .list_rates {
-        padding: 30px;
-    }
-
-    .rates .list__item {
-        width: calc(100% / 3 - 30px);
-    }
-
-    .about-item_methods {
+    .contacts__item {
         display: none;
     }
 
@@ -1118,18 +1102,22 @@ select {
         line-height: 32px;
     }
 
-    .footer-menu li {
+    .list_rates {
+        padding: 30px;
+    }
+
+    .rates .list__item {
+        width: calc(100% / 3 - 30px);
+    }
+
+    .footer__menu li {
         font-size: 14px;
         line-height: 14px;
         margin-right: 20px;
     }
 
-    .wrapper-list-services {
-        width: 85%;
-        margin: auto;
-    }
-
     /* about page */
+
     .about {
         margin-bottom: 15px;
     }
@@ -1138,14 +1126,12 @@ select {
         flex-wrap: wrap;
     }
 
-    .about-item_services {
-        flex: 100%;
-        margin-right: 0;
+    .service-taxi {
+        margin-bottom: 50px;
     }
 
-    .about-item_methods {
-        align-items: flex-start;
-        width: 100%;
+    .service-taxi .transfer-text {
+        margin: 0;
     }
 
     .transfer-text {
@@ -1161,27 +1147,18 @@ select {
         display: none;
     }
 
-    .service-taxi {
-        margin-bottom: 50px;
-    }
-
-    .service-taxi .transfer-text {
-        margin: 0;
-    }
     /* about page end */
 }
 
 @media (max-width: 768px) {
-    .servises {
-        margin-bottom: 60px;
-    }
-
-    .services__wrap {
-        padding: 0;
-    }
-
     .phones_header {
         display: none;
+    }
+
+    .phones-block .phones__icon {
+        width: 30px;
+        height: 30px;
+        margin: 0 7px;
     }
 
     .hero {
@@ -1200,15 +1177,55 @@ select {
         line-height: 40px;
     }
 
-    .phones-block .phones__icon {
-        width: 30px;
-        height: 30px;
-        margin: 0 7px;
+    .title-section {
+        font-size: 28px;
+        line-height: 38px;
     }
 
-    .tabs-content {
+    .list_social .social__link {
+        width: 28px;
+        height: 20px;
+    }
+
+    .list_social .list__item,
+    .law a:first-child {
+        margin-right: 20px;
+    }
+
+    /* services */
+
+    .servises {
         margin-bottom: 60px;
     }
+
+    .services__wrap {
+        padding: 0;
+    }
+
+    .wrapper-list-services {
+        padding: 0 30px;
+        width: 100%;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .wrapper__item {
+        width: calc(100% / 2 - 24px);
+    }
+
+    .wrapper-list-services .list__item {
+        font-size: 16px;
+        line-height: 26px;
+        padding-left: 25px;
+        margin-bottom: 0;
+    }
+
+    .wrapper-list-services .list__item::before {
+        width: 15px;
+        height: 15px;
+    }
+
+    /* rates */
 
     .rates {
         margin-bottom: 70px;
@@ -1223,11 +1240,17 @@ select {
         margin: auto;
     }
 
-    .rates .title-section {
-        text-align: center;
+    .list__desc {
+        line-height: 28px;
+        letter-spacing: 0.01em;
+        font-family: "Montserrat Alternates";
     }
 
-    .rates .routs__link {
+    .rates .list__desc {
+        font-size: 18px;
+    }
+
+    .rates .booking__link {
         margin: auto;
         display: block;
         width: 240px;
@@ -1240,9 +1263,24 @@ select {
         text-align: center;
     }
 
-    .routs__btn {
+    .booking__btn {
         display: block;
     }
+
+    .booking__link {
+        display: block;
+        width: 240px;
+        padding: 12px 0;
+        border: 2px solid var(--green);
+        color: rgba(2, 134, 31, 0.8);
+        background-color: #ffffff;
+        box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.25);
+        text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.25);
+        font-size: 20px;
+        text-align: center;
+    }
+
+    /* booking */
 
     .booking {
         padding-bottom: 20px;
@@ -1278,41 +1316,13 @@ select {
         margin-bottom: 15px;
     }
 
-    .title-section {
-        font-size: 28px;
-        line-height: 38px;
-        /* letter-spacing: 0.01em; */
-    }
+    /* features */
 
-    .tabs {
-        display: block;
-    }
-
-    .tabs-header {
-        display: flex;
-        justify-content: space-between;
-        width: 100%;
-        padding: 0 45px;
-    }
-
-    .tabs-header__item {
-        font-size: 26px;
-        line-height: 30px;
-        margin-bottom: 45px;
-    }
-
-    .tabs-content__title {
-        font-size: 50px;
-        line-height: 50px;
-        text-align: right;
-        -webkit-text-stroke-width: 2px;
-        letter-spacing: 0.04em;
-        margin-bottom: 0;
-    }
-
-    .tabs-features__text {
-        font-size: 14px;
-        line-height: 14px;
+    .features .list__item {
+        width: calc(100% / 2 - 50px);
+        margin-bottom: 30px;
+        padding-left: 15px;
+        padding-right: 15px;
     }
 
     .list_features {
@@ -1320,15 +1330,29 @@ select {
         justify-content: space-between;
     }
 
-    .tabs-features {
-        justify-content: flex-end;
+    .features,
+    .routs .title-section {
+        margin-bottom: 60px;
     }
 
-    .features .list__item {
-        width: calc(100% / 2 - 50px);
-        margin-bottom: 30px;
-        padding-left: 15px;
-        padding-right: 15px;
+    .features__icon,
+    .features__title {
+        margin-bottom: 20px;
+    }
+
+    .features__title {
+        font-size: 22px;
+        line-height: 32px;
+    }
+
+    /* routs */
+
+    .routs {
+        padding-bottom: 70px;
+    }
+
+    .routs__title {
+        font-size: 28px;
     }
 
     .list_routs {
@@ -1343,62 +1367,7 @@ select {
         min-height: 250px;
     }
 
-    .routs__link {
-        display: block;
-        width: 240px;
-        padding: 12px 0;
-        border: 2px solid var(--green);
-        color: rgba(2, 134, 31, 0.8);
-        background-color: #ffffff;
-        box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.25);
-        text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.25);
-        font-size: 20px;
-        text-align: center;
-    }
-
-    .wrapper-list-services {
-        padding: 0 30px;
-        width: 100%;
-        flex-direction: row;
-        justify-content: space-between;
-    }
-
-    .routs__title {
-        font-size: 28px;
-    }
-    .features,
-    .routs .title-section {
-        margin-bottom: 60px;
-    }
-
-    .routs {
-        padding-bottom: 70px;
-    }
-
-    .features__icon,
-    .features__title {
-        margin-bottom: 20px;
-    }
-
-    .features__title {
-        font-size: 22px;
-        line-height: 32px;
-    }
-
-    .list__desc {
-        font-size: 22px;
-        line-height: 28px;
-        letter-spacing: 0.01em;
-        font-family: "Montserrat Alternates";
-    }
-
-    .rates .list__desc {
-        font-size: 18px;
-    }
-
-    .radio {
-        flex-wrap: wrap;
-    }
+    /* footer */
 
     .footer-page h3,
     .email-footer,
@@ -1419,21 +1388,6 @@ select {
         font-family: "Roboto";
     }
 
-    .wrapper__item {
-        width: calc(100% / 2 - 24px);
-    }
-
-    .wrapper-list-services .list__item {
-        font-size: 16px;
-        line-height: 26px;
-        padding-left: 25px;
-        margin-bottom: 0;
-    }
-
-    .wrapper-list-services .list__item::before {
-        width: 15px;
-        height: 15px;
-    }
     .footer-page .title-section,
     .phones-title,
     .email-footer,
@@ -1441,14 +1395,8 @@ select {
         margin-bottom: 20px;
     }
 
-    .list_social .social__link {
-        width: 28px;
-        height: 20px;
-    }
-
-    .list_social .list__item,
-    .law a:first-child {
-        margin-right: 20px;
+    .footer__menu {
+        margin-bottom: 40px;
     }
 
     .copyright {
@@ -1465,18 +1413,11 @@ select {
     }
 
     .law {
-        margin-bottom: 15px;
-    }
-
-    .footer-menu {
-        margin-bottom: 40px;
-    }
-
-    .law {
         margin-bottom: 25px;
     }
 
-    /* booking page */
+    /* another pages */
+
     .container_form {
         margin: 0 auto 60px auto;
     }
@@ -1484,10 +1425,13 @@ select {
     form .order-btn {
         margin-top: 40px;
     }
-    /* booking page end */
 
     .header-page.open .close-menu {
         right: 45px;
+    }
+
+    .radio {
+        flex-wrap: wrap;
     }
 }
 
@@ -1512,11 +1456,15 @@ select {
         margin-bottom: 40px;
     }
 
-    .wrapper-list-services {
+    .wrapper-list-services,
+    .field-group {
         flex-wrap: wrap;
     }
 
-    .wrapper-list-services .wrapper__item {
+    .wrapper-list-services .wrapper__item,
+    .features .list__item,
+    .list_routs .list__item,
+    .list_rates .list__item {
         width: 100%;
     }
 
@@ -1533,20 +1481,8 @@ select {
         display: block;
     }
 
-    .features .list__item {
-        width: 100%;
-    }
-
-    .list_routs .list__item {
-        width: 100%;
-    }
-
     .list_rates {
         flex-direction: column;
-    }
-
-    .list_rates .list__item {
-        width: 100%;
     }
 
     .rates__thumb {
@@ -1580,13 +1516,8 @@ select {
         object-fit: cover;
     }
 
-    .footer-menu {
+    .footer__menu {
         display: none;
-    }
-
-    /* booking page */
-    .field-group {
-        flex-wrap: wrap;
     }
 
     .field-group label,
@@ -1594,7 +1525,6 @@ select {
         width: 100%;
         margin-bottom: 20px;
     }
-    /* booking page end */
 }
 
 @media (max-width: 480px) {
@@ -1605,7 +1535,7 @@ select {
     .messengers_header,
     .booking .booking__slogan,
     .booking .booking__online,
-    .footer-menu {
+    .footer__menu {
         display: none;
     }
 
@@ -1648,20 +1578,17 @@ select {
         line-height: 29px;
     }
 
-    .tabs-header__item {
-        font-size: 16px;
-        line-height: 20px;
+    .wrapper-list-services {
+        padding: 0 5px;
     }
 
-    .tabs-content__title {
-        font-size: 36px;
-        line-height: 46px;
-        text-align: center;
+    .item-title {
+        font-size: 24px;
+        line-height: 32px;
     }
 
-    .tabs-features__text {
-        font-size: 10px;
-        line-height: 12px;
+    .rates .booking__link {
+        width: 170px;
     }
 
     .services__wrap {
@@ -1676,14 +1603,6 @@ select {
         max-width: 50%;
         margin: auto;
         margin-bottom: 30px;
-    }
-
-    .rates .routs__link {
-        width: 170px;
-    }
-
-    .wrapper-list-services {
-        padding: 0 5px;
     }
 
     .features__icon,
@@ -1729,7 +1648,7 @@ select {
         flex-direction: column;
     }
 
-    .footer-social,
+    .footer__social,
     .law {
         margin-bottom: 40px;
     }
@@ -1743,11 +1662,6 @@ select {
 
     .header-page.open .close-menu {
         right: 30px;
-    }
-
-    .item-title {
-        font-size: 24px;
-        line-height: 32px;
     }
 }
 

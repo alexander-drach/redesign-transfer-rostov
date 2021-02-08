@@ -7,9 +7,9 @@
   <section id="services" class="servises">
     <h2 class="title-section">Наши услуги</h2>
     <div class="services__wrap container">
-      <div class="wrapper-list-services ">
+      <div class="wrapper-list-services">
         <div class="wrapper__item">
-          <ul class="list list_services">
+          <ul class="list">
             <li class="list__item">Круглосуточный прием заказов.</li>
             <li class="list__item">Онлайн-касса (предоставляем квитанцию, БСО).</li>
             <li class="list__item">Встреча на вокзале и в аэропорту.</li>
@@ -20,7 +20,7 @@
         </div><!-- wrapper__item -->
         <div class="wrapper__item">
           <h2 class="title-section sub-title">А также</h2>
-          <ul class="list list_services">
+          <ul class="list">
             <li class="list__item">Обслуживание корпоративных клиентов.</li>
             <li class="list__item">Обслуживание гостиниц и отелей.</li>
             <li class="list__item">Встреча на автомобилях бизнес и премиум классов.
@@ -29,12 +29,12 @@
             <li class="list__item">Доставка багажа.</li>
           </ul>
         </div><!-- wrapper__item -->
-      </div>
+      </div> <!-- wrapper-list-services -->
 
-      <div class="about-item about-item_methods">
+      <div class="contacts__item">
         <p class="item-title">Забронировать автомобиль можете любым удобным для Вас способом:</p>
         <p class="about-text">Позвонить по телефонам:</p>
-        <div class="about-phones">
+        <div class="contacts__phones">
           <?php include 'includes/phones.php'?>
         </div>
 
@@ -46,23 +46,20 @@
 
         <p class="about-text">Написать в соц. сети:</p>
 
-        <ul class="list list_social about-social">
+        <ul class="list list_social contacts__social">
           <?php include 'includes/social.php'?><?php include 'includes/messengers.php'?>
         </ul>
 
         <p class="item-title">Заполнить форму <a href="page-booking.php">бронирования</a></p>
-      </div><!-- methods -->
-
-    </div>
-
+      </div><!-- contacts__item -->
     </div><!-- container -->
   </section><!-- servises -->
-  
+
   <div class="booking">
     <p class="booking__slogan">Забронируйте поездку прямо сейчас</p>
     <p class="booking__call">Позвоните нам <?php include 'includes/phones.php'?></p>
     <p class="booking__online">или забронируйте <a href="page-booking.php">онлайн</a> на сайте</p>
-    <a href="page-booking.php" class="order-btn">Забронировать</a>
+    <a class="order-btn" href="page-booking.php">Забронировать</a>
   </div><!-- booking -->
 
   <div class="rates">
@@ -98,8 +95,8 @@
           </div>
         </li><!-- list__item -->
       </ul>
-      <div class="routs__btn">
-        <a href="page-booking.php" class="routs__link">Забронировать</a>
+      <div class="booking__btn">
+        <a class="booking__link" href="page-booking.php">Забронировать</a>
       </div>
     </div><!-- container -->
   </div><!-- rates -->
@@ -151,7 +148,7 @@
     </ul>
   </section><!-- features -->
 
-  <section id="routs" class="routs">
+  <section class="routs" id="routs">
     <h2 class="title-section">Популярные направления</h2>
     <div class="container">
       <ul class="list list_routs">
@@ -160,7 +157,7 @@
         <li class="list__item">
           <img class="routs__img" src="<?php echo $item['img']; ?>" alt="">
           <h3 class="routs__title"><?php echo $item['title']; ?></h3>
-          <a class="routs__link" href="./page-booking.php?title=<?php echo $item['title']; ?>">Заказать</a>
+          <a class="booking__link" href="./page-booking.php?title=<?php echo $item['title']; ?>">Заказать</a>
           <div class="routs__overlay"></div>
         </li><!-- list__item -->
 
