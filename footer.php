@@ -1,4 +1,3 @@
-<footer>
 
   <footer class="footer-page">
     <div class="container">
@@ -34,8 +33,8 @@
         <a class="author" href="#">Design by S. Polyanskay@</a>
       </div><!-- copyright -->
     </div><!-- container -->
-  </footer>
-  <button class="btn-up visually-hidden" type="button"><span class="visually-hidden">Наверх</span></button>
+    <button class="btn-up" type="button"><span class="visually-hidden">Наверх</span></button>
+  </footer>  
   <script src="js/script.js"></script>
   </body>
 

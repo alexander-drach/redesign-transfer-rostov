@@ -733,6 +733,7 @@ textarea {
 
 /* footer */
 .footer-page {
+    position: relative;
     text-align: center;
     background: linear-gradient(
         180deg,
@@ -973,6 +974,17 @@ form .order-btn {
 }
 
 /* ABOUT-PAGE END */
+
+.btn-up {
+    position: absolute;
+    bottom: 200px;
+    right: 60px;
+    width: 50px;
+    height: 50px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-image: url(img/icons/icon-btn-up.svg);
+}
 
 /* MEDIA QUERY */
 
