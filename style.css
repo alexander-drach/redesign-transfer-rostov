@@ -25,6 +25,8 @@ body {
 }
 
 main {
+    display: flex;
+    flex-direction: column;
     flex: 1;
 }
 
@@ -1163,6 +1165,26 @@ form .order-btn {
 }
 
 @media (max-width: 768px) {
+    .rates {
+        order: 0;
+    }
+
+    #services {
+        order: 1;
+    }
+
+    .booking {
+        order: 2;
+    }
+
+    .features {
+        order: 3;
+    }
+
+    .routs {
+        order: 4;
+    }
+
     .phones_header {
         display: none;
     }
@@ -1277,6 +1299,7 @@ form .order-btn {
 
     .booking__btn {
         display: block;
+        margin-top: 0;
     }
 
     .booking__link {
@@ -1445,10 +1468,6 @@ form .order-btn {
     .radio {
         flex-wrap: wrap;
     }
-
-    .btn-up {
-        display: none;
-    }
 }
 
 @media (max-width: 700px) {
@@ -1464,6 +1483,10 @@ form .order-btn {
 
     .wrapper__item {
         width: calc(100% / 2 - 10px);
+    }
+
+    .btn-up {
+        display: none;
     }
 }
 
@@ -1691,5 +1714,14 @@ form .order-btn {
         font-size: 16px;
         line-height: 28px;
         text-align: center;
+    }
+
+    .rates .container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .list_rates {
+        order: 1;
     }
 }
