@@ -1026,10 +1026,6 @@ form .order-btn {
         margin-bottom: 25px;
     }
 
-    .contacts__phones .phones__item {
-        font-size: 18px;
-    }
-
     /* booking page */
 
     .container_form {
@@ -1107,8 +1103,13 @@ form .order-btn {
         margin-bottom: 0;
     }
 
+    .services__wrap {
+        flex-direction: column;
+    }
+
     .contacts__item {
-        display: none;
+        width: 95%;
+        margin: 60px auto 0;
     }
 
     .booking .phones__item {
@@ -1167,6 +1168,7 @@ form .order-btn {
 @media (max-width: 768px) {
     .rates {
         order: 0;
+        margin-bottom: 40px;
     }
 
     #services {
@@ -1226,6 +1228,11 @@ form .order-btn {
         margin-right: 20px;
     }
 
+   .item-title {
+        font-size: 28px;
+        line-height: 32px;
+    }
+
     /* services */
 
     .servises {
@@ -1260,10 +1267,6 @@ form .order-btn {
     }
 
     /* rates */
-
-    .rates {
-        margin-bottom: 70px;
-    }
 
     .rates .list__item {
         width: calc(100% / 3 - 10px);
@@ -1626,6 +1629,15 @@ form .order-btn {
         line-height: 32px;
     }
 
+    .contacts__item .about-text {
+        font-size: 18px;
+        line-height: 36px;
+    }
+
+    .contacts__phones .phones__item {
+        font-size: 22px;
+    }
+
     .rates .booking__link {
         width: 170px;
     }
@@ -1710,7 +1722,7 @@ form .order-btn {
         line-height: 24px;
     }
 
-    .about .about-text {
+    .about-text {
         font-size: 16px;
         line-height: 28px;
         text-align: center;
